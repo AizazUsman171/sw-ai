@@ -1,4 +1,631 @@
-where  are js files of other pages  and also testimonial page is also missing, moreover  why these pages "📋 Services Page,
-💼 Portfolio Page ,
-💬 Testimonials Page ,
-📝 Blog Page" have vertical content approach , i mean thy should as  great as you ut effort into these about, contact, i ndex
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Testimonials - AI Developer & Automation Expert</title>
+    <meta name="description" content="Read testimonials from satisfied clients who have transformed their businesses with my AI automation and development services.">
+    <meta name="keywords" content="AI Developer Testimonials, Client Reviews, Automation Success Stories, AI Project Reviews, Customer Feedback">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzJBNzNGRiIvPgo8cGF0aCBkPSJNOCAxMkgxNlY4SDhWMTJaTTEwIDEwSDRIMTBaTTggMjBIMTZWMTZIOFYyMFpNMTAgMThIMTRWMTBIMThaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>AI<strong>Dev</strong></span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="portfolio.html" class="nav-link">Portfolio <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="portfolio.html#ai-automation">AI Automation</a></li>
+                        <li><a href="portfolio.html#chatbots">Chatbot Development</a></li>
+                        <li><a href="portfolio.html#ai-development">AI Development</a></li>
+                        <li><a href="portfolio.html#crypto-trading">Crypto Trading</a></li>
+                        <li><a href="portfolio.html#recommendations">Recommendation Systems</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="testimonials.html" class="nav-link active">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="testimonials-hero section-padding">
+        <div class="container">
+            <div class="testimonials-hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <h1>Client Success Stories</h1>
+                    <p class="hero-subtitle">Trusted by businesses worldwide</p>
+                    <p class="hero-description">
+                        Discover how my AI automation and development expertise has transformed businesses 
+                        across industries. From startups to enterprises, see the real impact of intelligent 
+                        solutions on efficiency, growth, and innovation.
+                    </p>
+                    
+                    <div class="testimonials-stats">
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-count="4.9">0</span>
+                                <span class="stat-label">Average Rating</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-count="50">0</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-count="95">0</span>
+                                <span class="stat-label">Success Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" data-aos="fade-left">
+                    <div class="testimonials-illustration">
+                        <div class="feedback-hub">
+                            <div class="central-star">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="floating-reviews">
+                                <div class="review-bubble" data-rating="5">
+                                    <div class="bubble-stars">★★★★★</div>
+                                    <span>"Exceptional work!"</span>
+                                </div>
+                                <div class="review-bubble" data-rating="5">
+                                    <div class="bubble-stars">★★★★★</div>
+                                    <span>"Highly recommended"</span>
+                                </div>
+                                <div class="review-bubble" data-rating="5">
+                                    <div class="bubble-stars">★★★★★</div>
+                                    <span>"Amazing results"</span>
+                                </div>
+                                <div class="review-bubble" data-rating="5">
+                                    <div class="bubble-stars">★★★★★</div>
+                                    <span>"Professional service"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Testimonials -->
+    <section class="featured-testimonials section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Featured Reviews</span>
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-description">
+                    Real feedback from businesses that have experienced the power of AI automation
+                </p>
+            </div>
+            
+            <div class="featured-grid">
+                <div class="featured-testimonial" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-header">
+                        <div class="client-avatar">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiMyQTczRkYiLz4KPHR2dCB4PSI0MCIgeT0iNDgiIGZvbnQtZmFtaWx5PSJJbnRlciIgZm9udC1zaXplPSIzMiIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk08L3RleHQ+Cjwvc3ZnPgo=" alt="Mark Thompson">
+                        </div>
+                        <div class="client-info">
+                            <h3>Mark Thompson</h3>
+                            <p>CEO, TechStart Solutions</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "Absolutely exceptional work on our AI automation project. The chatbot implemented 
+                        reduced our customer service workload by 70% while improving response times dramatically. 
+                        The system handles complex queries with remarkable accuracy and the integration was seamless. 
+                        Professional, knowledgeable, and delivered ahead of schedule."
+                    </blockquote>
+                    <div class="testimonial-project">
+                        <span class="project-tag">AI Automation</span>
+                        <span class="project-tag">Customer Service Bot</span>
+                    </div>
+                </div>
+                
+                <div class="featured-testimonial" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-header">
+                        <div class="client-avatar">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiMxMEI5ODEiLz4KPHR2dCB4PSI0MCIgeT0iNDgiIGZvbnQtZmFtaWx5PSJJbnRlciIgZm9udC1zaXplPSIzMiIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlM8L3RleHQ+Cjwvc3ZnPgo=" alt="Sarah Chen">
+                        </div>
+                        <div class="client-info">
+                            <h3>Sarah Chen</h3>
+                            <p>Product Manager, RetailFlow</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "The recommendation system exceeded our expectations completely. User engagement 
+                        increased by 45% and conversion rates improved significantly within the first month. 
+                        The real-time personalization is incredible and the technical expertise demonstrated 
+                        throughout the project was outstanding. Communication was excellent throughout."
+                    </blockquote>
+                    <div class="testimonial-project">
+                        <span class="project-tag">Recommendation System</span>
+                        <span class="project-tag">Machine Learning</span>
+                    </div>
+                </div>
+                
+                <div class="featured-testimonial" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-header">
+                        <div class="client-avatar">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiNGNTlFMEIiLz4KPHR2dCB4PSI0MCIgeT0iNDgiIGZvbnQtZmFtaWx5PSJJbnRlciIgZm9udC1zaXplPSIzMiIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkQ8L3RleHQ+Cjwvc3ZnPgo=" alt="David Rodriguez">
+                        </div>
+                        <div class="client-info">
+                            <h3>David Rodriguez</h3>
+                            <p>Founder, CryptoVentures</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "Brilliant work on the crypto trading algorithm using reinforcement learning. 
+                        The risk management features are sophisticated and the performance metrics are impressive. 
+                        The system has been running stably for months with consistent returns. Clear documentation 
+                        and excellent ongoing support make this a 5-star experience."
+                    </blockquote>
+                    <div class="testimonial-project">
+                        <span class="project-tag">Crypto Trading</span>
+                        <span class="project-tag">Reinforcement Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Testimonials -->
+    <section class="all-testimonials section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">All Reviews</span>
+                <h2 class="section-title">Complete Client Feedback</h2>
+                <p class="section-description">
+                    Browse all testimonials organized by project type and industry
+                </p>
+            </div>
+            
+            <div class="testimonials-filter" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All Reviews</button>
+                <button class="filter-btn" data-filter="automation">AI Automation</button>
+                <button class="filter-btn" data-filter="chatbot">Chatbots</button>
+                <button class="filter-btn" data-filter="trading">Trading Systems</button>
+                <button class="filter-btn" data-filter="recommendation">Recommendations</button>
+                <button class="filter-btn" data-filter="ai-development">AI Development</button>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-category="automation" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <div class="client-avatar">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiM5MzMzRUEiLz4KPHR2dCB4PSIzMCIgeT0iMzYiIGZvbnQtZmFtaWx5PSJJbnRlciIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkE8L3RleHQ+Cjwvc3ZnPgo=" alt="Amanda Wilson">
+                        </div>
+                        <div class="client-details">
+                            <h4>Amanda Wilson</h4>
+                            <p>Operations Director, LogiFlow</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "The workflow automation solution transformed our inventory management completely. 
+                        What used to take hours now happens automatically with perfect accuracy. The N8N 
+                        integrations work flawlessly and have saved us countless hours weekly."
+                    </blockquote>
+                    <div class="testimonial-footer">
+                        <span class="project-type">Workflow Automation</span>
+                        <span class="review-date">2 months ago</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-category="chatbot" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <div class="client-avatar">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiNFRjQ0NDQiLz4KPHR2dCB4PSIzMCIgeT0iMzYiIGZvbnQtZmFtaWx5PSJJbnRlciIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPko8L3RleHQ+Cjwvc3ZnPgo=" alt="James Liu">
+                        </div>
+                        <div class="client-details">
+                            <h4>James Liu</h4>
+                            <p>Customer Success Lead, HealthTech Pro</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "Our new chatbot handles complex medical appointment scheduling with incredible 
+                        accuracy. Patients love the instant responses and our staff can focus on more 
+                        important tasks. The RAG implementation is remarkably intelligent."
+                    </blockquote>
+                    <div class="testimonial-footer">
+                        <span class="project-type">Healthcare Chatbot</span>
+                        <span class="review-date">1 month ago</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-category="ai-development" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-header">
+                        <div class="client-avatar">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiMwNkI2RDQiLz4KPHR2dCB4PSIzMCIgeT0iMzYiIGZvbnQtZmFtaWx5PSJJbnRlciIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkw8L3RleHQ+Cjwvc3ZnPgo=" alt="Lisa Patel">
+                        </div>
+                        <div class="client-details">
+                            <h4>Lisa Patel</h4>
+                            <p>CTO, DataDriven Analytics</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "The custom AI solution for document processing has revolutionized our data analysis 
+                        workflow. LangChain integration is brilliant and the accuracy of text extraction 
+                        and categorization is phenomenal. Exceptional technical expertise."
+                    </blockquote>
+                    <div class="testimonial-footer">
+                        <span class="project-type">Document AI</span>
+                        <span class="review-date">3 weeks ago</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-category="recommendation" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-header">
+                        <div class="client-avatar">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiNGMDU2NTAiLz4KPHR2dCB4PSIzMCIgeT0iMzYiIGZvbnQtZmFtaWx5PSJJbnRlciIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkM8L3RleHQ+Cjwvc3ZnPgo=" alt="Carlos Rodriguez">
+                        </div>
+                        <div class="client-details">
+                            <h4>Carlos Rodriguez</h4>
+                            <p>E-commerce Director, ShopSmart</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "Product recommendations have never been this accurate! Our customers are finding 
+                        exactly what they need and our sales have increased by 35%. The real-time learning 
+                        capability is impressive and keeps improving over time."
+                    </blockquote>
+                    <div class="testimonial-footer">
+                        <span class="project-type">E-commerce Recommendations</span>
+                        <span class="review-date">6 weeks ago</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-category="trading" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-header">
+                        <div class="client-avatar">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiM0QjVFNjMiLz4KPHR2dCB4PSIzMCIgeT0iMzYiIGZvbnQtZmFtaWx5PSJJbnRlciIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkI8L3RleHQ+Cjwvc3ZnPgo=" alt="Brian Foster">
+                        </div>
+                        <div class="client-details">
+                            <h4>Brian Foster</h4>
+                            <p>Investment Manager, AlphaFund</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "The algorithmic trading system has exceeded all performance expectations. Risk 
+                        management is sophisticated, drawdowns are minimal, and the consistent returns 
+                        are remarkable. Professional implementation from start to finish."
+                    </blockquote>
+                    <div class="testimonial-footer">
+                        <span class="project-type">Algorithmic Trading</span>
+                        <span class="review-date">2 months ago</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-category="automation" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-header">
+                        <div class="client-avatar">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiM4QjUxOTYiLz4KPHR2dCB4PSIzMCIgeT0iMzYiIGZvbnQtZmFtaWx5PSJJbnRlciIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk48L3RleHQ+Cjwvc3ZnPgo=" alt="Nina Kowalski">
+                        </div>
+                        <div class="client-details">
+                            <h4>Nina Kowalski</h4>
+                            <p>Process Manager, ManufacturingPlus</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "Manufacturing process automation has improved our efficiency by 60%. Quality 
+                        control is now automated with AI vision systems and our error rates have 
+                        dropped to near zero. Outstanding technical delivery."
+                    </blockquote>
+                    <div class="testimonial-footer">
+                        <span class="project-type">Manufacturing Automation</span>
+                        <span class="review-date">4 months ago</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more-container" data-aos="fade-up">
+                <button class="btn btn-secondary btn-large" id="load-more-testimonials">
+                    <i class="fas fa-plus"></i>
+                    Load More Reviews
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rating Breakdown -->
+    <section class="rating-breakdown section-padding bg-light">
+        <div class="container">
+            <div class="breakdown-content">
+                <div class="breakdown-header" data-aos="fade-up">
+                    <h2>Rating Breakdown</h2>
+                    <p>Detailed analysis of client satisfaction across all projects</p>
+                </div>
+                
+                <div class="rating-stats">
+                    <div class="overall-rating" data-aos="fade-up" data-aos-delay="100">
+                        <div class="rating-number">4.9</div>
+                        <div class="rating-info">
+                            <div class="stars-large">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Based on 50+ projects</p>
+                        </div>
+                    </div>
+                    
+                    <div class="rating-bars" data-aos="fade-up" data-aos-delay="200">
+                        <div class="rating-bar">
+                            <span class="rating-label">5 stars</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" data-width="88"></div>
+                            </div>
+                            <span class="rating-percentage">88%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="rating-label">4 stars</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" data-width="10"></div>
+                            </div>
+                            <span class="rating-percentage">10%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="rating-label">3 stars</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" data-width="2"></div>
+                            </div>
+                            <span class="rating-percentage">2%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="rating-label">2 stars</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" data-width="0"></div>
+                            </div>
+                            <span class="rating-percentage">0%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="rating-label">1 star</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" data-width="0"></div>
+                            </div>
+                            <span class="rating-percentage">0%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="satisfaction-metrics" data-aos="fade-up" data-aos-delay="300">
+                    <div class="metric">
+                        <div class="metric-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>On-Time Delivery</h3>
+                        <div class="metric-value">98%</div>
+                        <p>Projects delivered on schedule</p>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-icon">
+                            <i class="fas fa-redo"></i>
+                        </div>
+                        <h3>Repeat Clients</h3>
+                        <div class="metric-value">85%</div>
+                        <p>Clients who return for more projects</p>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Referral Rate</h3>
+                        <div class="metric-value">70%</div>
+                        <p>New clients from referrals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section-padding bg-primary">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Join These Success Stories?</h2>
+                <p>Experience the same level of excellence that has earned these outstanding reviews</p>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn btn-white btn-large">
+                        <i class="fas fa-calendar"></i>
+                        Start Your Project
+                    </a>
+                    <a href="portfolio.html" class="btn btn-outline-white btn-large">
+                        <i class="fas fa-eye"></i>
+                        View Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>AI<strong>Dev</strong></span>
+                    </div>
+                    <p>Transforming businesses through intelligent automation and cutting-edge AI solutions.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html#ai-automation">AI Automation</a></li>
+                            <li><a href="services.html#chatbot-development">Chatbot Development</a></li>
+                            <li><a href="services.html#ai-development">Custom AI Solutions</a></li>
+                            <li><a href="services.html#crypto-trading">Crypto Trading Systems</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="blog.html">Technical Articles</a></li>
+                            <li><a href="contact.html">Consultation</a></li>
+                            <li><a href="#" target="_blank">Upwork Profile</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 AI Developer Portfolio. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/testimonials.js"></script>
+</body>
+</html>
