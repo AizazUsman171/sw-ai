@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
     initLoadMorePosts();
     initShareButtons();
     initReadingTime();
+    initBlogFilter();
+    initLoadMore();
+    initNewsletterForm();
 });
 
 // Blog search functionality
@@ -241,15 +244,15 @@ function shareArticle(title, url) {
 
 // Reading time calculation
 function initReadingTime() {
-    const articles = document.querySelectorAll('.blog-card');
+    const articles = document.querySelectorAll('.blog-card, .featured-post-card');
     
     articles.forEach(article => {
-        const excerpt = article.querySelector('.blog-excerpt').textContent;
-        const wordCount = excerpt.split(' ').length;
-        const readTime = Math.ceil(wordCount / 200); // 200 words per minute
+        const content = article.querySelector('.blog-excerpt, .featured-excerpt');
+        const readTimeElement = article.querySelector('.read-time');
         
-        const readTimeElement = article.querySelector('.blog-read-time');
-        if (readTimeElement && !readTimeElement.textContent.includes('min')) {
+        if (content && readTimeElement) {
+            const wordCount = content.textContent.trim().split(/\s+/).length;
+            const readTime = Math.ceil(wordCount / 200); // 200 words per minute
             readTimeElement.innerHTML = `<i class="fas fa-clock"></i> ${readTime} min read`;
         }
     });

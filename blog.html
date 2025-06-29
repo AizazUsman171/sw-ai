@@ -14,18 +14,20 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">`n    <link rel="stylesheet" href="css/mobile-fixes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzJBNzNGRiIvPgo8cGF0aCBkPSJNOCAxMkgxNlY4SDhWMTJaTTEwIDEwSDRIMTBaTTggMjBIMTZWMTZIOFYyMFpNMTAgMThIMTRWMTBIMThaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzJBNzNGRiIvPgo8cGF0aCBkPSJNOCAxMkgxNlY4SDhWMTJaTTEwIDEwSDFIMTBaTTggMjBIMTZWMTZIOFYyMFpNMTAgMThIMTRWMTBIMThaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <i class="fas fa-brain"></i>
                 <span>AI<strong>Dev</strong></span>
-            </div>
+            </a>
             
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
@@ -44,8 +46,16 @@
                         <li><a href="portfolio.html#recommendations">Recommendation Systems</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="services.html" class="nav-link">Services</a>
+                <li class="nav-item dropdown">
+                    <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#ai-services">AI Development</a></li>
+                        <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+                        <li><a href="services.html#it-services">IT & Managed Services</a></li>
+                        <li><a href="services.html#custom">Custom Solutions</a></li>
+                    </ul>
+                </li>
+
                 </li>
                 <li class="nav-item">
                     <a href="testimonials.html" class="nav-link">Testimonials</a>
@@ -70,27 +80,84 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="page-hero">
+    <section class="blog-hero">
         <div class="hero-bg">
             <div class="neural-network-bg"></div>
         </div>
         <div class="container">
-            <div class="page-hero-content" data-aos="fade-up">
+            <div class="blog-hero-content">
+                <div class="hero-text" data-aos="fade-up">
                 <div class="hero-badge">
                     <i class="fas fa-blog"></i>
                     <span>AI Insights & Articles</span>
                 </div>
-                <h1 class="page-hero-title">
-                    AI <span class="gradient-text">Knowledge Hub</span>
-                </h1>
-                <p class="page-hero-description">
-                    Stay ahead with the latest AI trends, technical insights, and practical guides from real-world AI development experience.
-                </p>
+                    <h1>AI <span class="gradient-text">Knowledge Hub</span></h1>
+                    <p class="hero-subtitle">Technical insights & practical guides</p>
+                    <p class="hero-description">
+                        Stay ahead with the latest AI trends, in-depth Advanced Security, and real-world Cloud Infrastructure 
+                        from professional AI development experience.
+                    </p>
+                    
+                    <div class="blog-stats">
+                        <div class="blog-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Articles Published</span>
+                            </div>
+                        </div>
+                        <div class="blog-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">10K+</span>
+                                <span class="stat-label">Monthly Readers</span>
+                            </div>
+                        </div>
+                        <div class="blog-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">Satisfaction Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                    
                 <div class="blog-categories">
-                    <span class="category-tag">Machine Learning</span>
-                    <span class="category-tag">Automation</span>
-                    <span class="category-tag">Chatbots</span>
-                    <span class="category-tag">Computer Vision</span>
+                        <span class="category-pill">Machine Learning</span>
+                        <span class="category-pill">Automation</span>
+                        <span class="category-pill">Chatbots</span>
+                        <span class="category-pill">Computer Vision</span>
+                        <span class="category-pill">Advanced Security</span>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" data-aos="fade-left">
+                    <div class="blog-illustration">
+                        <div class="floating-cards">
+                            <div class="floating-card" data-category="ai">
+                                <i class="fas fa-robot"></i>
+                                <span>AI Development</span>
+                            </div>
+                            <div class="floating-card" data-category="automation">
+                                <i class="fas fa-cogs"></i>
+                                <span>Automation</span>
+                            </div>
+                            <div class="floating-card" data-category="tutorial">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Advanced Security</span>
+                            </div>
+                            <div class="floating-card" data-category="case-study">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Cloud Infrastructure</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,245 +166,366 @@
     <!-- Featured Article -->
     <section class="featured-article section-padding">
         <div class="container">
-            <div class="featured-post" data-aos="fade-up">
-                <div class="featured-badge">
-                    <i class="fas fa-star"></i>
-                    <span>Featured Article</span>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Editor's Pick</span>
+                <h2 class="section-title">Featured Article</h2>
                 </div>
+            
+            <div class="featured-post-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="featured-content">
                     <div class="featured-meta">
-                        <span class="category">AI Development</span>
-                        <span class="date">December 15, 2024</span>
-                        <span class="read-time">8 min read</span>
+                        <span class="article-category featured">AI Development</span>
+                        <span class="article-date">December 15, 2024</span>
+                        <span class="read-time">
+                            <i class="fas fa-clock"></i>
+                            8 min read
+                        </span>
                     </div>
+                    
                     <h2>Building Production-Ready AI Applications with LangChain and OpenAI</h2>
-                    <p>A comprehensive guide to developing scalable AI applications using LangChain framework, covering architecture patterns, best practices, and real-world implementation strategies for enterprise-grade solutions.</p>
-                    <div class="featured-topics">
-                        <span class="topic-tag">LangChain</span>
-                        <span class="topic-tag">OpenAI GPT-4</span>
-                        <span class="topic-tag">Production</span>
-                        <span class="topic-tag">Architecture</span>
+                    <p class="featured-excerpt">
+                        A comprehensive guide to developing scalable AI applications using LangChain framework, 
+                        covering architecture patterns, best practices, and real-world implementation strategies 
+                        for enterprise-grade solutions.
+                    </p>
+                    
+                    <div class="article-tags">
+                        <span class="tag">LangChain</span>
+                        <span class="tag">OpenAI GPT-4</span>
+                        <span class="tag">Production</span>
+                        <span class="tag">Architecture</span>
+                        <span class="tag">Enterprise</span>
                     </div>
-                    <a href="#" class="btn btn-primary">
+                    
+                    <div class="featured-footer">
+                        <div class="article-stats">
+                            <span class="stat-item">
+                                <i class="fas fa-eye"></i>
+                                2.5K views
+                            </span>
+                            <span class="stat-item">
+                                <i class="fas fa-heart"></i>
+                                189 likes
+                            </span>
+                            <span class="stat-item">
+                                <i class="fas fa-share"></i>
+                                45 shares
+                            </span>
+                        </div>
+                        
+                        <a href="#" class="btn btn-primary featured-btn">
                         <i class="fas fa-arrow-right"></i>
                         Read Full Article
                     </a>
+                    </div>
                 </div>
+                
+                <div class="featured-visual">
                 <div class="featured-image">
-                    <div class="article-placeholder">
-                        <i class="fas fa-code"></i>
+                        <div class="code-preview">
+                            <div class="code-header">
+                                <div class="code-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="code-title">langchain_app.py</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line">
+                                    <span class="keyword">from</span> <span class="module">langchain</span> <span class="keyword">import</span> <span class="class">ChatOpenAI</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="keyword">from</span> <span class="module">langchain.chains</span> <span class="keyword">import</span> <span class="class">RetrievalQA</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="comment"># Initialize AI model</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="variable">llm</span> = <span class="class">ChatOpenAI</span>(<span class="parameter">model_name</span>=<span class="string">"gpt-4"</span>)
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blog Grid -->
-    <section class="blog-grid section-padding bg-light">
+    <!-- Blog Filter & Grid -->
+    <section class="blog-content section-padding">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Latest Articles</span>
-                <h2 class="section-title">Technical Insights & Tutorials</h2>
+            <div class="blog-header" data-aos="fade-up">
+                <div class="section-header">
+                    <span class="section-badge">Latest Content</span>
+                    <h2 class="section-title">Technical Articles & Insights</h2>
                 <p class="section-description">
                     In-depth articles covering AI development, automation strategies, and emerging technologies
                 </p>
             </div>
 
-            <!-- Blog Filter -->
-            <div class="blog-filter" data-aos="fade-up" data-aos-delay="200">
-                <button class="filter-btn active" data-filter="all">All Articles</button>
-                <button class="filter-btn" data-filter="ai-development">AI Development</button>
-                <button class="filter-btn" data-filter="automation">Automation</button>
-                <button class="filter-btn" data-filter="tutorials">Tutorials</button>
-                <button class="filter-btn" data-filter="case-studies">Case Studies</button>
+                <div class="blog-filter">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-list"></i>
+                        All Articles
+                    </button>
+                    <button class="filter-btn" data-filter="ai-development">
+                        <i class="fas fa-brain"></i>
+                        AI Development
+                    </button>
+                    <button class="filter-btn" data-filter="automation">
+                        <i class="fas fa-cogs"></i>
+                        Automation
+                    </button>
+                    <button class="filter-btn" data-filter="Advanced Security">
+                        <i class="fas fa-graduation-cap"></i>
+                        Advanced Security
+                    </button>
+                    <button class="filter-btn" data-filter="case-studies">
+                        <i class="fas fa-chart-line"></i>
+                        Cloud Infrastructure
+                    </button>
+                </div>
             </div>
 
-            <!-- Articles Grid -->
-            <div class="blog-posts-grid" data-aos="fade-up" data-aos-delay="400">
+            <div class="blog-grid" data-aos="fade-up" data-aos-delay="300">
                 <!-- Article 1 -->
-                <article class="blog-post" data-category="ai-development">
-                    <div class="post-image">
-                        <div class="post-placeholder">
+                <article class="blog-card" data-category="ai-development">
+                    <div class="card-image">
+                        <div class="image-placeholder">
                             <i class="fas fa-robot"></i>
                         </div>
-                        <div class="post-category">AI Development</div>
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span class="post-date">December 10, 2024</span>
-                            <span class="post-read-time">6 min read</span>
+                        <div class="card-category">AI Development</div>
+                        <div class="card-overlay">
+                            <a href="#" class="read-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="publish-date">Dec 10, 2024</span>
+                            <span class="read-time">6 min</span>
+                        </div>
+                        
                         <h3><a href="#">Advanced RAG Systems: Beyond Basic Implementation</a></h3>
-                        <p>Exploring sophisticated Retrieval-Augmented Generation techniques for enterprise applications, including vector databases, semantic search optimization, and multi-modal RAG systems.</p>
-                        <div class="post-tags">
+                        <p>Exploring sophisticated Retrieval-Augmented Generation techniques for enterprise applications...</p>
+                        
+                        <div class="card-tags">
                             <span class="tag">RAG</span>
                             <span class="tag">Vector DB</span>
                             <span class="tag">Semantic Search</span>
                         </div>
-                        <div class="post-footer">
-                            <div class="post-stats">
-                                <span><i class="fas fa-eye"></i> 1.2k views</span>
-                                <span><i class="fas fa-heart"></i> 89 likes</span>
+                        
+                        <div class="card-footer">
+                            <div class="engagement-stats">
+                                <span><i class="fas fa-eye"></i> 1.2k</span>
+                                <span><i class="fas fa-heart"></i> 89</span>
                             </div>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more">Read More</a>
                         </div>
                     </div>
                 </article>
 
                 <!-- Article 2 -->
-                <article class="blog-post" data-category="automation">
-                    <div class="post-image">
-                        <div class="post-placeholder">
+                <article class="blog-card" data-category="automation">
+                    <div class="card-image">
+                        <div class="image-placeholder">
                             <i class="fas fa-cogs"></i>
                         </div>
-                        <div class="post-category">Automation</div>
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span class="post-date">December 5, 2024</span>
-                            <span class="post-read-time">5 min read</span>
+                        <div class="card-category">Automation</div>
+                        <div class="card-overlay">
+                            <a href="#" class="read-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <h3><a href="#">N8N vs Zapier vs Make.com: The Ultimate Automation Comparison</a></h3>
-                        <p>A detailed comparison of leading automation platforms, analyzing features, pricing, use cases, and when to choose each platform for your business automation needs.</p>
-                        <div class="post-tags">
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="publish-date">Dec 5, 2024</span>
+                            <span class="read-time">5 min</span>
+                        </div>
+                        
+                        <h3><a href="#">N8N vs Zapier vs Make.com: Ultimate Automation Comparison</a></h3>
+                        <p>A detailed comparison of leading automation platforms, analyzing features, pricing, and use cases...</p>
+                        
+                        <div class="card-tags">
                             <span class="tag">N8N</span>
                             <span class="tag">Zapier</span>
                             <span class="tag">Make.com</span>
                         </div>
-                        <div class="post-footer">
-                            <div class="post-stats">
-                                <span><i class="fas fa-eye"></i> 2.1k views</span>
-                                <span><i class="fas fa-heart"></i> 156 likes</span>
+                        
+                        <div class="card-footer">
+                            <div class="engagement-stats">
+                                <span><i class="fas fa-eye"></i> 2.1k</span>
+                                <span><i class="fas fa-heart"></i> 156</span>
                             </div>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more">Read More</a>
                         </div>
                     </div>
                 </article>
 
                 <!-- Article 3 -->
-                <article class="blog-post" data-category="tutorials">
-                    <div class="post-image">
-                        <div class="post-placeholder">
+                <article class="blog-card" data-category="Advanced Security">
+                    <div class="card-image">
+                        <div class="image-placeholder">
                             <i class="fas fa-comments"></i>
                         </div>
-                        <div class="post-category">Tutorial</div>
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span class="post-date">November 28, 2024</span>
-                            <span class="post-read-time">12 min read</span>
+                        <div class="card-category">Tutorial</div>
+                        <div class="card-overlay">
+                            <a href="#" class="read-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="publish-date">Nov 28, 2024</span>
+                            <span class="read-time">12 min</span>
+                        </div>
+                        
                         <h3><a href="#">Building Intelligent Chatbots: From Concept to Production</a></h3>
-                        <p>Step-by-step tutorial for creating production-ready chatbots using GPT-4, including conversation flow design, context management, and deployment strategies.</p>
-                        <div class="post-tags">
+                        <p>Step-by-step tutorial for creating production-ready chatbots using GPT-4...</p>
+                        
+                        <div class="card-tags">
                             <span class="tag">Chatbots</span>
                             <span class="tag">GPT-4</span>
                             <span class="tag">Tutorial</span>
                         </div>
-                        <div class="post-footer">
-                            <div class="post-stats">
-                                <span><i class="fas fa-eye"></i> 3.4k views</span>
-                                <span><i class="fas fa-heart"></i> 234 likes</span>
+                        
+                        <div class="card-footer">
+                            <div class="engagement-stats">
+                                <span><i class="fas fa-eye"></i> 3.4k</span>
+                                <span><i class="fas fa-heart"></i> 234</span>
                             </div>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more">Read More</a>
                         </div>
                     </div>
                 </article>
 
                 <!-- Article 4 -->
-                <article class="blog-post" data-category="case-studies">
-                    <div class="post-image">
-                        <div class="post-placeholder">
+                <article class="blog-card" data-category="case-studies">
+                    <div class="card-image">
+                        <div class="image-placeholder">
                             <i class="fas fa-chart-line"></i>
                         </div>
-                        <div class="post-category">Case Study</div>
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span class="post-date">November 20, 2024</span>
-                            <span class="post-read-time">10 min read</span>
+                        <div class="card-category">Case Study</div>
+                        <div class="card-overlay">
+                            <a href="#" class="read-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="publish-date">Nov 20, 2024</span>
+                            <span class="read-time">10 min</span>
+                        </div>
+                        
                         <h3><a href="#">Case Study: 70% Customer Service Reduction with AI Chatbot</a></h3>
-                        <p>Real-world case study of implementing an AI chatbot for an e-commerce company, including challenges faced, solutions implemented, and measurable results achieved.</p>
-                        <div class="post-tags">
+                        <p>Real-world case study of implementing an AI chatbot for an e-commerce company...</p>
+                        
+                        <div class="card-tags">
                             <span class="tag">Case Study</span>
                             <span class="tag">E-commerce</span>
                             <span class="tag">ROI</span>
                         </div>
-                        <div class="post-footer">
-                            <div class="post-stats">
-                                <span><i class="fas fa-eye"></i> 1.8k views</span>
-                                <span><i class="fas fa-heart"></i> 142 likes</span>
+                        
+                        <div class="card-footer">
+                            <div class="engagement-stats">
+                                <span><i class="fas fa-eye"></i> 1.8k</span>
+                                <span><i class="fas fa-heart"></i> 142</span>
                             </div>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more">Read More</a>
                         </div>
                     </div>
                 </article>
 
                 <!-- Article 5 -->
-                <article class="blog-post" data-category="ai-development">
-                    <div class="post-image">
-                        <div class="post-placeholder">
+                <article class="blog-card" data-category="ai-development">
+                    <div class="card-image">
+                        <div class="image-placeholder">
                             <i class="fas fa-eye"></i>
                         </div>
-                        <div class="post-category">AI Development</div>
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span class="post-date">November 15, 2024</span>
-                            <span class="post-read-time">8 min read</span>
+                        <div class="card-category">AI Development</div>
+                        <div class="card-overlay">
+                            <a href="#" class="read-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="publish-date">Nov 15, 2024</span>
+                            <span class="read-time">8 min</span>
+                        </div>
+                        
                         <h3><a href="#">Computer Vision in Production: Lessons from Real Projects</a></h3>
-                        <p>Insights from deploying computer vision solutions in production environments, covering model optimization, edge computing, and handling real-world data variations.</p>
-                        <div class="post-tags">
+                        <p>Insights from deploying computer vision solutions in production environments...</p>
+                        
+                        <div class="card-tags">
                             <span class="tag">Computer Vision</span>
                             <span class="tag">Production</span>
                             <span class="tag">Optimization</span>
                         </div>
-                        <div class="post-footer">
-                            <div class="post-stats">
-                                <span><i class="fas fa-eye"></i> 2.7k views</span>
-                                <span><i class="fas fa-heart"></i> 198 likes</span>
+                        
+                        <div class="card-footer">
+                            <div class="engagement-stats">
+                                <span><i class="fas fa-eye"></i> 2.7k</span>
+                                <span><i class="fas fa-heart"></i> 198</span>
                             </div>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more">Read More</a>
                         </div>
                     </div>
                 </article>
 
                 <!-- Article 6 -->
-                <article class="blog-post" data-category="automation">
-                    <div class="post-image">
-                        <div class="post-placeholder">
+                <article class="blog-card" data-category="automation">
+                    <div class="card-image">
+                        <div class="image-placeholder">
                             <i class="fas fa-bitcoin"></i>
                         </div>
-                        <div class="post-category">Automation</div>
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span class="post-date">November 8, 2024</span>
-                            <span class="post-read-time">15 min read</span>
+                        <div class="card-category">Automation</div>
+                        <div class="card-overlay">
+                            <a href="#" class="read-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="publish-date">Nov 8, 2024</span>
+                            <span class="read-time">15 min</span>
+                        </div>
+                        
                         <h3><a href="#">Reinforcement Learning for Crypto Trading: A Practical Guide</a></h3>
-                        <p>Deep dive into using reinforcement learning for cryptocurrency trading, including environment setup, reward engineering, risk management, and backtesting strategies.</p>
-                        <div class="post-tags">
-                            <span class="tag">Reinforcement Learning</span>
+                        <p>Deep dive into using reinforcement learning for cryptocurrency trading...</p>
+                        
+                        <div class="card-tags">
+                            <span class="tag">RL</span>
                             <span class="tag">Crypto</span>
                             <span class="tag">Trading</span>
                         </div>
-                        <div class="post-footer">
-                            <div class="post-stats">
-                                <span><i class="fas fa-eye"></i> 4.2k views</span>
-                                <span><i class="fas fa-heart"></i> 312 likes</span>
+                        
+                        <div class="card-footer">
+                            <div class="engagement-stats">
+                                <span><i class="fas fa-eye"></i> 4.2k</span>
+                                <span><i class="fas fa-heart"></i> 312</span>
                             </div>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more">Read More</a>
                         </div>
                     </div>
                 </article>
             </div>
 
-            <!-- Load More -->
             <div class="load-more-section" data-aos="fade-up">
-                <button class="btn btn-secondary btn-large">
+                <button class="btn btn-secondary btn-large load-more-btn">
                     <i class="fas fa-plus"></i>
                     Load More Articles
                 </button>
@@ -345,44 +533,90 @@
         </div>
     </section>
 
-    <!-- Newsletter Signup -->
-    <section class="newsletter section-padding">
+    <!-- Newsletter Section -->
+    <section class="newsletter-section section-padding">
         <div class="container">
-            <div class="newsletter-content" data-aos="fade-up">
-                <div class="newsletter-info">
+            <div class="newsletter-card" data-aos="fade-up">
+                <div class="newsletter-content">
+                    <div class="newsletter-header">
                     <h2>Stay Updated with AI Insights</h2>
-                    <p>Get the latest AI development tips, tutorials, and industry insights delivered to your inbox</p>
-                    <ul class="newsletter-benefits">
-                        <li><i class="fas fa-check"></i> Weekly AI development tips</li>
-                        <li><i class="fas fa-check"></i> Exclusive tutorials and guides</li>
-                        <li><i class="fas fa-check"></i> Industry trends and insights</li>
-                        <li><i class="fas fa-check"></i> Project case studies</li>
-                    </ul>
+                        <p>Get the latest AI development tips, Advanced Security, and industry insights delivered weekly</p>
+                    </div>
+                    
+                    <div class="newsletter-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Weekly AI development tips</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Exclusive Advanced Security and guides</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Industry trends and insights</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Project Cloud Infrastructure</span>
+                        </div>
                 </div>
-                <div class="newsletter-form">
-                    <form id="newsletter-form">
+                    
+                    <form class="newsletter-form">
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Enter your email address" required>
+                            </div>
                             <button type="submit" class="btn btn-primary">
                                 <i class="fas fa-paper-plane"></i>
                                 Subscribe
                             </button>
                         </div>
-                        <p class="newsletter-privacy">No spam. Unsubscribe anytime. Your privacy is respected.</p>
+                        <p class="newsletter-privacy">
+                            <i class="fas fa-shield-alt"></i>
+                            No spam. Unsubscribe anytime. Your privacy is respected.
+                        </p>
                     </form>
+                </div>
+                
+                <div class="newsletter-visual">
+                    <div class="email-preview">
+                        <div class="email-header">
+                            <div class="email-subject">
+                                <i class="fas fa-newspaper"></i>
+                                AI Weekly Insights #42
+                            </div>
+                            <div class="email-date">Every Tuesday</div>
+                        </div>
+                        <div class="email-content">
+                            <div class="email-item">
+                                <span class="bullet">•</span>
+                                Advanced RAG Techniques
+                            </div>
+                            <div class="email-item">
+                                <span class="bullet">•</span>
+                                Production AI Deployment
+                            </div>
+                            <div class="email-item">
+                                <span class="bullet">•</span>
+                                Latest OpenAI Updates
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta section-padding bg-primary">
+    <section class="blog-cta section-padding">
         <div class="container">
             <div class="cta-content" data-aos="fade-up">
                 <h2>Need Custom AI Solutions?</h2>
                 <p>Let's discuss how we can implement the AI strategies and techniques from these articles in your business</p>
                 <div class="cta-actions">
-                    <a href="contact.html" class="btn btn-white btn-large">
+                    <a href="contact.html" class="btn btn-primary btn-large">
                         <i class="fas fa-calendar"></i>
                         Schedule Consultation
                     </a>
@@ -402,12 +636,11 @@
                 <div class="footer-brand">
                     <div class="footer-logo">
                         <i class="fas fa-brain"></i>
-                        <span>AI<strong>Dev</strong></span>
+                        <span>Swenta<strong>Solutions</strong></span>
                     </div>
-                    <p>Transforming businesses through intelligent automation and cutting-edge AI solutions.</p>
+                    <p>Empowering businesses through innovative AI, Cyber Security, and Cloud Computing solutions.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-link"><i class="fas fa-globe"></i></a>
                     </div>
@@ -417,10 +650,10 @@
                     <div class="footer-column">
                         <h4>Services</h4>
                         <ul>
-                            <li><a href="services.html">AI Development</a></li>
-                            <li><a href="services.html">Chatbot Development</a></li>
-                            <li><a href="services.html">Computer Vision</a></li>
-                            <li><a href="services.html">Content Generation</a></li>
+                            <li><a href="services.html#ai-services">AI Solutions</a></li>
+                            <li><a href="services.html#cybersecurity">Cyber Security</a></li>
+                            <li><a href="services.html#cloud-computing">Cloud Computing</a></li>
+                            <li><a href="services.html#custom">Custom Solutions</a></li>
                         </ul>
                     </div>
                     
@@ -435,12 +668,12 @@
                     </div>
                     
                     <div class="footer-column">
-                        <h4>Resources</h4>
+                        <h4>Contact</h4>
                         <ul>
-                            <li><a href="blog.html">Technical Articles</a></li>
-                            <li><a href="contact.html">Consultation</a></li>
-                            <li><a href="#" target="_blank">Upwork Profile</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact.html">Get in Touch</a></li>
+                            <li><a href="contact.html#locations">Global Offices</a></li>
+                            <li><a href="contact.html#support">Support</a></li>
+                            <li><a href="contact.html#careers">Careers</a></li>
                         </ul>
                     </div>
                 </div>
@@ -448,7 +681,7 @@
             
             <div class="footer-bottom">
                 <div class="footer-copyright">
-                    <p>&copy; 2024 AI Developer Portfolio. All rights reserved.</p>
+                    <p>&copy; 2024 SwentaSolutions. All rights reserved.</p>
                 </div>
                 <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
@@ -461,5 +694,6 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 </html> 

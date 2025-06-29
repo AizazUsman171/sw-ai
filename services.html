@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Services | Expert AI Development & Automation Solutions</title>
-    <meta name="description" content="Comprehensive AI services including automation, chatbots, computer vision, predictive analytics, and more. Professional AI development for businesses.">
-    <meta name="keywords" content="AI Services, Automation, Chatbot Development, Computer Vision, Predictive Analytics, AI Consulting">
+    <meta name="description" content="Comprehensive AI services including automation, chatbots, Advanced Security, predictive Cloud Infrastructure, and more. Professional AI development for businesses.">
+    <meta name="keywords" content="AI Services, Automation, Chatbot Development, Advanced Security, Predictive Cloud Infrastructure, AI Consulting">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,18 +15,20 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">`n    <link rel="stylesheet" href="css/mobile-fixes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzJBNzNGRiIvPgo8cGF0aCBkPSJNOCAxMkgxNlY4SDhWMTJaTTEwIDEwSDRIMTBaTTggMjBIMTZWMTZIOFYyMFpNMTAgMThIMTRWMTBIMThaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzJBNzNGRiIvPgo8cGF0aCBkPSJNOCAxMkgxNlY4SDhWMTJaTTEwIDEwSDFIMTBaTTggMjBIMTZWMTZIOFYyMFpNMTAgMThIMTRWMTBIMThaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <i class="fas fa-brain"></i>
                 <span>AI<strong>Dev</strong></span>
-            </div>
+            </a>
             
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
@@ -45,8 +47,14 @@
                         <li><a href="portfolio.html#recommendations">Recommendation Systems</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="services.html" class="nav-link active">Services</a>
+                <li class="nav-item dropdown">
+                    <a href="services.html" class="nav-link active">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#ai-services">AI Development</a></li>
+                        <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+                        <li><a href="services.html#it-services">IT & Managed Services</a></li>
+                        <li><a href="services.html#custom">Custom Solutions</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="testimonials.html" class="nav-link">Testimonials</a>
@@ -71,457 +79,853 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="page-hero">
+    <section class="services-hero">
         <div class="hero-bg">
             <div class="neural-network-bg"></div>
         </div>
         <div class="container">
-            <div class="page-hero-content" data-aos="fade-up">
+            <div class="services-hero-content">
+                <div class="hero-text" data-aos="fade-up">
                 <div class="hero-badge">
                     <i class="fas fa-cogs"></i>
                     <span>Professional AI Services</span>
                 </div>
-                <h1 class="page-hero-title">
-                    Comprehensive <span class="gradient-text">AI Solutions</span>
-                </h1>
-                <p class="page-hero-description">
-                    From intelligent automation to cutting-edge AI development, I provide end-to-end solutions that transform businesses and drive innovation.
-                </p>
-                <div class="page-hero-actions">
+                    <h1>Innovative Solutions for <span class="gradient-text">AI, Cybersecurity, and IT Excellence</span></h1>
+                    <p class="hero-subtitle">Transform Your Business with AI, Cybersecurity, and IT Solutions</p>
+                    <p class="hero-description">
+                        From AI-driven automation and machine learning to robust cybersecurity and IT management, we deliver enterprise-grade solutions that drive innovation, enhance security, and fuel growth in a fast-evolving digital landscape.
+
+
+                    </p>
+                    
+                    <div class="services-stats">
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-count="50">0</span>
+                                <span class="stat-label">Projects Delivered</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-count="15">0</span>
+                                <span class="stat-label">Industries Served</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-count="98">0</span>
+                                <span class="stat-label">Success Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
                     <a href="contact.html" class="btn btn-primary btn-large">
                         <i class="fas fa-calendar"></i>
                         Schedule Consultation
                     </a>
-                    <a href="portfolio.html" class="btn btn-secondary btn-large">
+                        <a href="portfolio.html" class="btn btn-outline-white btn-large">
                         <i class="fas fa-eye"></i>
                         View Case Studies
                     </a>
                 </div>
             </div>
+                
+                <div class="hero-visual" data-aos="fade-left">
+                    <div class="services-illustration">
+                        <div class="service-hub">
+                            <div class="central-hub">
+                                <i class="fas fa-microchip"></i>
+            </div>
+                            <div class="service-nodes">
+                                <div class="service-node" data-service="automation">
+                                    <i class="fas fa-cogs"></i>
+                                    <span>Automation</span>
+                    </div>
+                                <div class="service-node" data-service="chatbots">
+                                    <i class="fas fa-comments"></i>
+                                    <span>Chatbots</span>
+                </div>
+                                <div class="service-node" data-service="vision">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Advanced Security</span>
+                    </div>
+                                <div class="service-node" data-service="Cloud Infrastructure">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Cloud Infrastructure</span>
+                </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Services Overview -->
-    <section class="services-overview section-padding">
+    <!-- AI Services Categories -->
+    <section id="ai-services" class="services-categories section-padding">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">What I Offer</span>
-                <h2 class="section-title">Expert AI Services Portfolio</h2>
+                <span class="section-badge">Service Portfolio</span>
+                <h2 class="section-title">AI Solutions That Drive Results</h2>
                 <p class="section-description">
-                    Specialized in delivering cutting-edge AI solutions tailored to your business needs
+                    Specialized AI services designed to solve complex business challenges and unlock new opportunities
                 </p>
             </div>
 
-            <div class="services-stats" data-aos="fade-up" data-aos-delay="200">
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-project-diagram"></i>
+            <div class="services-grid">
+                <!-- AI Automation -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
                     </div>
-                    <div class="stat-number" data-count="50">0</div>
-                    <div class="stat-label">Projects Completed</div>
+                        <div class="service-badge">Most Popular</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-industry"></i>
+                    <h3>AI Automation</h3>
+                    <p>Streamline workflows and eliminate repetitive tasks with intelligent automation solutions.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Workflow Automation (N8N, Zapier)</span>
                     </div>
-                    <div class="stat-number" data-count="15">0</div>
-                    <div class="stat-label">Industries Served</div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Document Processing & OCR</span>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-award"></i>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Email & Communication Automation</span>
                     </div>
-                    <div class="stat-number" data-count="98">0</div>
-                    <div class="stat-label">Success Rate %</div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Data Entry & Extraction</span>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-clock"></i>
                     </div>
-                    <div class="stat-number" data-count="24">0</div>
-                    <div class="stat-label">Hour Support</div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $2,500</span>
+                </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Get Started</a>
+            </div>
+
+                <!-- Chatbot Development -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-comments"></i>
+        </div>
+                    </div>
+                    <h3>Intelligent Chatbots</h3>
+                    <p>GPT-4 powered conversational AI that enhances customer experience and support.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Custom GPT-4 Integration</span>
+                    </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>RAG Systems & Knowledge Bases</span>
+                    </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Multi-platform Deployment</span>
+                </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Customer Support</span>
+                </div>
+            </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $3,000</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Get Started</a>
+                </div>
+
+                <!-- Advanced Security -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <h3>Advanced Security</h3>
+                    <p>Advanced visual AI for image recognition, analysis, and automated visual processing.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Object Detection & Recognition</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Face Recognition Systems</span>
+                    </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>OCR & Document Scanning</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Video Cloud Infrastructure & Surveillance</span>
+                </div>
+            </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $4,000</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Get Started</a>
+                </div>
+
+                <!-- Predictive Cloud Infrastructure -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <h3>Predictive Cloud Infrastructure</h3>
+                    <p>Data-driven insights and forecasting models that power intelligent business decisions.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sales & Demand Forecasting</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Customer Behavior Analysis</span>
+                    </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Risk Assessment Models</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Real-time Dashboards</span>
+                    </div>
+                </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $3,500</span>
+            </div>
+
+                    <a href="contact.html" class="btn btn-primary service-btn">Get Started</a>
+                    </div>
+
+                <!-- Recommendation Systems -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-bullseye"></i>
+                    </div>
+                </div>
+                    <h3>Recommendation Systems</h3>
+                    <p>Personalized recommendation engines that boost engagement and conversions.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Collaborative Filtering</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Content-Based Recommendations</span>
+                    </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Real-time Personalization</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>A/B Testing & Optimization</span>
+                    </div>
+                        </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $4,500</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Get Started</a>
+                </div>
+
+                <!-- Custom AI Development -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="service-badge premium">Premium</div>
+                    </div>
+                    <h3>Custom AI Development</h3>
+                    <p>Bespoke AI solutions tailored to your unique business requirements and industry.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Custom Model Training</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Domain-Specific Fine-tuning</span>
+                    </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>API Development & Integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cloud Deployment & Scaling</span>
+                </div>
+            </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Custom Quote</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Discuss Project</a>
+                    </div>
+                </div>
+                        </div>
+    </section>
+
+    <!-- Cybersecurity Services Section -->
+    <section id="cybersecurity" class="services-categories section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Cybersecurity</span>
+                <h2 class="section-title">Advanced Cybersecurity Solutions</h2>
+                <p class="section-description">
+                    Comprehensive cybersecurity services to protect your business from evolving threats
+                </p>
+                    </div>
+
+            <div class="services-grid">
+                <!-- DDoS Protection -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="service-badge">Essential</div>
+                    </div>
+                    <h3>DDoS Protection</h3>
+                    <p>Advanced DDoS protection with real-time traffic analysis and automated mitigation.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Attack Detection</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Dynamic Traffic Analysis</span>
+                    </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cloud-based Filtering</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>SLA Guaranteed Performance</span>
+                    </div>
+                </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $500/month</span>
+            </div>
+
+                    <a href="contact.html" class="btn btn-primary service-btn">Get Protected</a>
+                    </div>
+
+                <!-- Managed SOC -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-eye"></i>
+                    </div>
+                        <div class="service-badge">Most Popular</div>
+                </div>
+                    <h3>Managed SOC</h3>
+                    <p>24/7 Security Operations Center with expert monitoring and incident response.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Expert Monitoring</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Real-time Threat Analysis</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Incident Response</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Compliance Reporting</span>
+                        </div>
+                    </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $1,200/month</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Get Started</a>
+                </div>
+
+                <!-- Email Spam & Malware Protection -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                    </div>
+                    <h3>Email Security</h3>
+                    <p>Advanced email protection against spam, malware, and phishing attacks.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Anti-Spam & Anti-Malware</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Phishing Protection</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Data Loss Prevention</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Advanced Threat Detection</span>
+                        </div>
+                    </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $300/month</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Secure Email</a>
+                </div>
+
+                <!-- Vulnerability Scanning -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <h3>Vulnerability Scanning</h3>
+                    <p>Automated vulnerability detection and assessment with detailed reporting.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Automated Scanning</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Risk Classification</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Remediation Guidance</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Compliance Reporting</span>
+                        </div>
+                    </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $400/month</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Start Scanning</a>
+                </div>
+
+                <!-- Endpoint Security -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                    </div>
+                    <h3>Endpoint Security</h3>
+                    <p>Comprehensive endpoint protection for all devices in your network.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Anti-Malware Protection</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Device Management</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Behavioral Analysis</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Remote Incident Response</span>
+                        </div>
+                    </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $8/device/month</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Protect Devices</a>
+                </div>
+
+                <!-- Security Training -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <h3>Security Training</h3>
+                    <p>Comprehensive cybersecurity awareness and training programs for your team.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Security Awareness Training</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Phishing Simulations</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Policy Development</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Compliance Training</span>
+                </div>
+            </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $25/user/month</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Train Team</a>
+                    </div>
+                </div>
+                        </div>
+    </section>
+
+    <!-- IT & Managed Services Section -->
+    <section id="it-services" class="services-categories section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">IT & Managed Services</span>
+                <h2 class="section-title">Complete IT Infrastructure Management</h2>
+                <p class="section-description">
+                    Full-service IT support and infrastructure management to keep your business running smoothly
+                </p>
+                    </div>
+
+            <div class="services-grid">
+                <!-- Managed NOC -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="service-badge">Essential</div>
+                    </div>
+                    <h3>Managed NOC</h3>
+                    <p>24/7 Network Operations Center monitoring and management for your IT infrastructure.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Network Monitoring</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Proactive Issue Resolution</span>
+                    </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Performance Optimization</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Detailed Reporting</span>
+                        </div>
+                    </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $800/month</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Monitor Network</a>
+                </div>
+
+                <!-- Cloud Services -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="service-badge">Most Popular</div>
+                    </div>
+                    <h3>Cloud Managed Services</h3>
+                    <p>Complete cloud infrastructure management and optimization across all major platforms.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Multi-Cloud Management</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cloud Migration</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cost Optimization</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Security & Compliance</span>
+                </div>
+            </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $1,500/month</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Go Cloud</a>
+                    </div>
+
+                <!-- Backup & Recovery -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-database"></i>
+                </div>
+                    </div>
+                    <h3>Backup & Disaster Recovery</h3>
+                    <p>Comprehensive data protection and disaster recovery solutions for business continuity.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Automated Backups</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Disaster Recovery Planning</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Rapid Recovery</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Backup Testing</span>
+                        </div>
+                    </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $600/month</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Secure Data</a>
+                </div>
+
+                <!-- Network Management -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                    </div>
+                    <h3>Network Management</h3>
+                    <p>Complete network infrastructure design, implementation, and ongoing management.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Network Design & Setup</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Performance Monitoring</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Security Configuration</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Troubleshooting Support</span>
+                        </div>
+                    </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $700/month</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Manage Network</a>
+                </div>
+
+                <!-- Help Desk Support -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                    </div>
+                    <h3>Help Desk Support</h3>
+                    <p>Professional IT support desk providing technical assistance to your team.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Multi-Channel Support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ticket Management</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Remote Assistance</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Knowledge Base</span>
+                        </div>
+                    </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $50/user/month</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Get Support</a>
+                </div>
+
+                <!-- SD-WAN -->
+                <div class="service-category-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                    </div>
+                    <h3>SD-WAN Solutions</h3>
+                    <p>Software-defined WAN solutions for improved network performance and cost reduction.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Centralized Management</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Dynamic Path Selection</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Enhanced Security</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cost Optimization</span>
+                        </div>
+                    </div>
+
+                    <div class="service-pricing">
+                        <span class="price">Starting at $200/site/month</span>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary service-btn">Optimize WAN</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Grid -->
-    <section class="services-grid section-padding bg-light">
+    <!-- Custom Solutions Section -->
+    <section id="custom" class="services-categories section-padding bg-light">
         <div class="container">
-            <!-- AI Model Development -->
-            <div class="service-category" id="ai-development" data-aos="fade-up">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div class="category-info">
-                        <h3>AI Model Development</h3>
-                        <p>Custom AI models tailored to your specific domain and requirements</p>
-                    </div>
-                </div>
-                <div class="services-row">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-language"></i>
-                        </div>
-                        <h4>NLP & Vision Solutions</h4>
-                        <p>Advanced natural language processing and computer vision models</p>
-                        <ul class="service-features">
-                            <li>Text classification & sentiment analysis</li>
-                            <li>Object detection & recognition</li>
-                            <li>Custom model training</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h4>Predictive Analytics</h4>
-                        <p>Data-driven insights and forecasting for business intelligence</p>
-                        <ul class="service-features">
-                            <li>Sales & demand forecasting</li>
-                            <li>Risk assessment models</li>
-                            <li>Customer behavior prediction</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h4>Mobile & Web Integration</h4>
-                        <p>AI-powered applications for mobile and web platforms</p>
-                        <ul class="service-features">
-                            <li>ERP & CRM integration</li>
-                            <li>API development</li>
-                            <li>Cloud deployment</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-cog"></i>
-                        </div>
-                        <h4>Fine-tuned Models</h4>
-                        <p>Domain-specific model customization and optimization</p>
-                        <ul class="service-features">
-                            <li>Industry-specific training</li>
-                            <li>Performance optimization</li>
-                            <li>Custom datasets</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Custom Solutions</span>
+                <h2 class="section-title">Tailored Solutions for Your Business</h2>
+                <p class="section-description">
+                    We understand that every business is unique. Let us create customized solutions that perfectly fit your requirements.
+                </p>
             </div>
 
-            <!-- Chatbots & AI Assistants -->
-            <div class="service-category" id="chatbot-development" data-aos="fade-up">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <div class="category-info">
-                        <h3>Chatbots & AI Assistants</h3>
-                        <p>Intelligent conversational AI that enhances customer experience</p>
-                    </div>
-                </div>
-                <div class="services-row">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fab fa-rocketchat"></i>
-                        </div>
-                        <h4>Custom Chatbots</h4>
-                        <p>GPT-4 powered chatbots with advanced conversational abilities</p>
-                        <ul class="service-features">
-                            <li>Multi-platform deployment</li>
-                            <li>Context-aware responses</li>
-                            <li>24/7 customer support</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <h4>Document Processing</h4>
-                        <p>Automated document analysis and information extraction</p>
-                        <ul class="service-features">
-                            <li>Resume parsing</li>
-                            <li>Invoice processing</li>
-                            <li>Content summarization</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h4>Email Automation</h4>
-                        <p>Intelligent email management and response systems</p>
-                        <ul class="service-features">
-                            <li>Auto-reply generation</li>
-                            <li>Email classification</li>
-                            <li>Response prioritization</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                        <h4>Sentiment Analysis</h4>
-                        <p>Understanding customer emotions and feedback</p>
-                        <ul class="service-features">
-                            <li>Real-time sentiment tracking</li>
-                            <li>Brand monitoring</li>
-                            <li>Customer satisfaction analysis</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Computer Vision Solutions -->
-            <div class="service-category" id="computer-vision" data-aos="fade-up">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-camera"></i>
-                    </div>
-                    <div class="category-info">
-                        <h3>Computer Vision Solutions</h3>
-                        <p>Advanced visual AI for image and video analysis applications</p>
-                    </div>
-                </div>
-                <div class="services-row">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
-                        <h4>Face Recognition</h4>
-                        <p>Secure and accurate facial recognition systems</p>
-                        <ul class="service-features">
-                            <li>Access control systems</li>
-                            <li>Identity verification</li>
-                            <li>Attendance tracking</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-file-text"></i>
-                        </div>
-                        <h4>OCR Solutions</h4>
-                        <p>Optical character recognition for document digitization</p>
-                        <ul class="service-features">
-                            <li>ID card scanning</li>
-                            <li>Invoice processing</li>
-                            <li>Handwriting recognition</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-video"></i>
-                        </div>
-                        <h4>Surveillance Analytics</h4>
-                        <p>Intelligent video monitoring and analysis systems</p>
-                        <ul class="service-features">
-                            <li>People counting</li>
-                            <li>License plate recognition</li>
-                            <li>Anomaly detection</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-stethoscope"></i>
-                        </div>
-                        <h4>Medical Imaging</h4>
-                        <p>AI-powered medical image analysis and diagnostics</p>
-                        <ul class="service-features">
-                            <li>X-ray analysis</li>
-                            <li>MRI interpretation</li>
-                            <li>CT scan processing</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Content Generation -->
-            <div class="service-category" id="content-generation" data-aos="fade-up">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-magic"></i>
-                    </div>
-                    <div class="category-info">
-                        <h3>AI Content Generation</h3>
-                        <p>Creative AI solutions for automated content creation</p>
-                    </div>
-                </div>
-                <div class="services-row">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-pen-fancy"></i>
-                        </div>
-                        <h4>AI Writing Tools</h4>
-                        <p>Automated content creation for various purposes</p>
-                        <ul class="service-features">
-                            <li>Blog post generation</li>
-                            <li>Ad copy creation</li>
-                            <li>Legal document drafting</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-image"></i>
-                        </div>
-                        <h4>Image Generation</h4>
-                        <p>AI-powered visual content creation and editing</p>
-                        <ul class="service-features">
-                            <li>Product mockups</li>
-                            <li>Artwork generation</li>
-                            <li>Brand assets</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-video"></i>
-                        </div>
-                        <h4>Video Production</h4>
-                        <p>Automated video creation and avatar systems</p>
-                        <ul class="service-features">
-                            <li>AI avatars</li>
-                            <li>Voice dubbing</li>
-                            <li>Automated editing</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-cog"></i>
-                        </div>
-                        <h4>GPT Fine-tuning</h4>
-                        <p>Custom model training for industry-specific applications</p>
-                        <ul class="service-features">
-                            <li>Domain-specific models</li>
-                            <li>Performance optimization</li>
-                            <li>Custom training data</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Voice & Speech Processing -->
-            <div class="service-category" id="voice-processing" data-aos="fade-up">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-microphone"></i>
-                    </div>
-                    <div class="category-info">
-                        <h3>Voice & Speech Processing</h3>
-                        <p>Advanced audio AI for speech recognition and synthesis</p>
-                    </div>
-                </div>
-                <div class="services-row">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-microphone-alt"></i>
-                        </div>
-                        <h4>Speech Recognition</h4>
-                        <p>Accurate voice-to-text conversion systems</p>
-                        <ul class="service-features">
-                            <li>Voice commands</li>
-                            <li>Meeting transcription</li>
-                            <li>Multi-language support</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-volume-up"></i>
-                        </div>
-                        <h4>Voice Synthesis</h4>
-                        <p>Natural text-to-speech and voice cloning</p>
-                        <ul class="service-features">
-                            <li>Custom voice models</li>
-                            <li>Multi-lingual TTS</li>
-                            <li>Voice cloning</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-smile"></i>
-                        </div>
-                        <h4>Emotion Detection</h4>
-                        <p>AI-powered emotion recognition from voice</p>
-                        <ul class="service-features">
-                            <li>Sentiment analysis</li>
-                            <li>Stress detection</li>
-                            <li>Call center analytics</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-film"></i>
-                        </div>
-                        <h4>Voice Dubbing</h4>
-                        <p>Automated dubbing and voice replacement</p>
-                        <ul class="service-features">
-                            <li>Language dubbing</li>
-                            <li>Voice matching</li>
-                            <li>Lip-sync optimization</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Business Solutions -->
-            <div class="service-category" id="business-solutions" data-aos="fade-up">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="category-info">
-                        <h3>Business AI Solutions</h3>
-                        <p>Enterprise-grade AI solutions for business optimization</p>
-                    </div>
-                </div>
-                <div class="services-row">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h4>Cybersecurity AI</h4>
-                        <p>AI-powered security and threat detection systems</p>
-                        <ul class="service-features">
-                            <li>Intrusion detection</li>
-                            <li>Phishing prevention</li>
-                            <li>Fraud detection</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-bullhorn"></i>
-                        </div>
-                        <h4>Marketing Automation</h4>
-                        <p>AI-driven marketing and lead generation systems</p>
-                        <ul class="service-features">
-                            <li>Lead scoring</li>
-                            <li>Personalized campaigns</li>
-                            <li>Content optimization</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
+            <div class="custom-solutions-content">
+                <div class="custom-benefits" data-aos="fade-up" data-aos-delay="200">
+                    <div class="custom-benefit">
+                        <div class="benefit-icon">
                             <i class="fas fa-cogs"></i>
                         </div>
-                        <h4>Process Automation</h4>
-                        <p>Intelligent workflow automation and optimization</p>
-                        <ul class="service-features">
-                            <li>Workflow optimization</li>
-                            <li>CRM integration</li>
-                            <li>ERP automation</li>
-                        </ul>
+                        <div class="benefit-content">
+                            <h4>Tailored to Your Needs</h4>
+                            <p>Every solution is designed specifically for your business requirements and industry challenges.</p>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-graduation-cap"></i>
                         </div>
-                        <h4>Training & Consulting</h4>
-                        <p>AI education and strategic consulting services</p>
-                        <ul class="service-features">
-                            <li>AI strategy development</li>
-                            <li>Team training</li>
-                            <li>Technology consultation</li>
-                        </ul>
+                    
+                    <div class="custom-benefit">
+                        <div class="benefit-icon">
+                            <i class="fas fa-rocket"></i>
+                    </div>
+                        <div class="benefit-content">
+                            <h4>Scalable & Future-Ready</h4>
+                            <p>Built with scalability in mind to grow with your business and adapt to future technologies.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="custom-benefit">
+                        <div class="benefit-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>End-to-End Partnership</h4>
+                            <p>From consultation to implementation and ongoing support, we're your trusted technology partner.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-cta" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Ready to Discuss Your Custom Solution?</h3>
+                    <p>Schedule a free consultation to explore how we can address your specific technology challenges.</p>
+                    <div class="custom-actions">
+                        <a href="contact.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-calendar"></i>
+                            Schedule Consultation
+                        </a>
+                        <a href="portfolio.html" class="btn btn-secondary btn-large">
+                            <i class="fas fa-eye"></i>
+                            View Case Studies
+                        </a>
                     </div>
                 </div>
             </div>
@@ -529,43 +933,79 @@
     </section>
 
     <!-- Process Section -->
-    <section class="process section-padding">
+    <section class="services-process section-padding bg-light">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-badge">How It Works</span>
-                <h2 class="section-title">My Development Process</h2>
+                <h2 class="section-title">Proven Development Process</h2>
                 <p class="section-description">
-                    A proven methodology that ensures successful project delivery
+                    A structured approach that ensures successful AI implementation from concept to deployment
                 </p>
             </div>
 
-            <div class="process-steps">
+            <div class="process-timeline">
                 <div class="process-step" data-aos="fade-up" data-aos-delay="100">
                     <div class="step-number">01</div>
                     <div class="step-content">
                         <h3>Discovery & Analysis</h3>
-                        <p>Understanding your business needs, goals, and technical requirements through detailed consultation.</p>
+                        <p>Deep dive into your business needs, data landscape, and technical requirements to identify the best AI solutions.</p>
+                        <div class="step-features">
+                            <span>Requirements Analysis</span>
+                            <span>Data Assessment</span>
+                            <span>Technical Feasibility</span>
                     </div>
                 </div>
+                </div>
+
                 <div class="process-step" data-aos="fade-up" data-aos-delay="200">
                     <div class="step-number">02</div>
                     <div class="step-content">
                         <h3>Strategy & Planning</h3>
-                        <p>Developing a comprehensive AI strategy and project roadmap tailored to your objectives.</p>
+                        <p>Develop a comprehensive roadmap with clear milestones, timelines, and success metrics for your AI project.</p>
+                        <div class="step-features">
+                            <span>Project Roadmap</span>
+                            <span>Architecture Design</span>
+                            <span>Success Metrics</span>
                     </div>
                 </div>
+                </div>
+
                 <div class="process-step" data-aos="fade-up" data-aos-delay="300">
                     <div class="step-number">03</div>
                     <div class="step-content">
-                        <h3>Development & Testing</h3>
-                        <p>Building and rigorously testing your AI solution using cutting-edge technologies and best practices.</p>
+                        <h3>Development & Training</h3>
+                        <p>Build and train AI models using cutting-edge technologies and your specific data to ensure optimal performance.</p>
+                        <div class="step-features">
+                            <span>Model Development</span>
+                            <span>Data Processing</span>
+                            <span>Performance Optimization</span>
                     </div>
                 </div>
+                </div>
+
                 <div class="process-step" data-aos="fade-up" data-aos-delay="400">
                     <div class="step-number">04</div>
                     <div class="step-content">
+                        <h3>Testing & Validation</h3>
+                        <p>Rigorous testing and validation to ensure accuracy, reliability, and performance before deployment.</p>
+                        <div class="step-features">
+                            <span>Quality Assurance</span>
+                            <span>Performance Testing</span>
+                            <span>Security Validation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="500">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
                         <h3>Deployment & Support</h3>
-                        <p>Seamless deployment and ongoing support to ensure optimal performance and continuous improvement.</p>
+                        <p>Seamless deployment to production with ongoing monitoring, maintenance, and continuous improvement.</p>
+                        <div class="step-features">
+                            <span>Production Deployment</span>
+                            <span>Monitoring & Cloud Infrastructure</span>
+                            <span>Ongoing Support</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -573,19 +1013,19 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta section-padding bg-primary">
+    <section class="services-cta section-padding">
         <div class="container">
             <div class="cta-content" data-aos="fade-up">
                 <h2>Ready to Transform Your Business with AI?</h2>
-                <p>Let's discuss how these AI solutions can drive your success and competitive advantage</p>
+                <p>Let's discuss how AI can solve your specific challenges and drive growth for your organization.</p>
                 <div class="cta-actions">
-                    <a href="contact.html" class="btn btn-white btn-large">
+                    <a href="contact.html" class="btn btn-primary btn-large">
                         <i class="fas fa-calendar"></i>
                         Schedule Free Consultation
                     </a>
                     <a href="portfolio.html" class="btn btn-outline-white btn-large">
-                        <i class="fas fa-folder-open"></i>
-                        View Case Studies
+                        <i class="fas fa-eye"></i>
+                        View Success Stories
                     </a>
                 </div>
             </div>
@@ -599,12 +1039,11 @@
                 <div class="footer-brand">
                     <div class="footer-logo">
                         <i class="fas fa-brain"></i>
-                        <span>AI<strong>Dev</strong></span>
+                        <span>Swenta<strong>Solutions</strong></span>
                     </div>
-                    <p>Transforming businesses through intelligent automation and cutting-edge AI solutions.</p>
+                    <p>Empowering businesses through innovative AI, Cyber Security, and Cloud Computing solutions.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-link"><i class="fas fa-globe"></i></a>
                     </div>
@@ -614,10 +1053,10 @@
                     <div class="footer-column">
                         <h4>Services</h4>
                         <ul>
-                            <li><a href="#ai-development">AI Development</a></li>
-                            <li><a href="#chatbot-development">Chatbot Development</a></li>
-                            <li><a href="#computer-vision">Computer Vision</a></li>
-                            <li><a href="#content-generation">Content Generation</a></li>
+                            <li><a href="services.html#ai-services">AI Solutions</a></li>
+                            <li><a href="services.html#cybersecurity">Cyber Security</a></li>
+                            <li><a href="services.html#cloud-computing">Cloud Computing</a></li>
+                            <li><a href="services.html#custom">Custom Solutions</a></li>
                         </ul>
                     </div>
                     
@@ -632,12 +1071,12 @@
                     </div>
                     
                     <div class="footer-column">
-                        <h4>Resources</h4>
+                        <h4>Contact</h4>
                         <ul>
-                            <li><a href="blog.html">Technical Articles</a></li>
-                            <li><a href="contact.html">Consultation</a></li>
-                            <li><a href="#" target="_blank">Upwork Profile</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact.html">Get in Touch</a></li>
+                            <li><a href="contact.html#locations">Global Offices</a></li>
+                            <li><a href="contact.html#support">Support</a></li>
+                            <li><a href="contact.html#careers">Careers</a></li>
                         </ul>
                     </div>
                 </div>
@@ -645,7 +1084,7 @@
             
             <div class="footer-bottom">
                 <div class="footer-copyright">
-                    <p>&copy; 2024 AI Developer Portfolio. All rights reserved.</p>
+                    <p>&copy; 2024 SwentaSolutions. All rights reserved.</p>
                 </div>
                 <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
@@ -658,5 +1097,6 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
 </body>
 </html> 

@@ -1,0 +1,191 @@
+/* Mobile Responsive Fixes - Step by Step */
+
+/* Step 1: Base Fixes for Text Overflow */
+@media (max-width: 768px) {
+    /* Fix text cutting and hyphenation issues */
+    h1, h2, h3, h4, h5, h6,
+    .hero-title,
+    .section-title {
+        word-break: break-word !important;
+        hyphens: none !important;
+        line-height: 1.2 !important;
+        overflow-wrap: break-word !important;
+    }
+    
+    /* Fix About page title specifically */
+    .about-hero-content h1 {
+        font-size: 1.8rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Fix description text */
+    p, .hero-description, .section-description {
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Ensure containers don't cause horizontal overflow */
+    .container {
+        padding: 0 1rem !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
+    /* Fix navigation spacing and overlap */
+    .nav-container {
+        padding: 0.75rem 1rem !important;
+        gap: 0.5rem !important;
+        align-items: center !important;
+    }
+    
+    .nav-actions {
+        gap: 0.5rem !important;
+    }
+    
+    .nav-actions .btn {
+        padding: 0.5rem 0.875rem !important;
+        font-size: 0.8125rem !important;
+        white-space: nowrap !important;
+    }
+    
+    /* Hide decorative elements that cause overlap */
+    .floating-elements,
+    .floating-cards,
+    .floating-badges,
+    .brain-network,
+    .neural-network-bg {
+        display: none !important;
+    }
+}
+
+/* Step 2: Fix Grid Layouts */
+@media (max-width: 768px) {
+    /* Force single column layout for better readability */
+    .hero-content,
+    .about-hero-content,
+    .services-hero-content,
+    .portfolio-hero-content,
+    .blog-hero-content,
+    .contact-hero-content {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+        gap: 2rem !important;
+    }
+    
+    /* Hide visual elements on mobile */
+    .hero-visual,
+    .ai-illustration,
+    .services-illustration,
+    .portfolio-illustration,
+    .blog-illustration,
+    .contact-illustration {
+        display: none !important;
+    }
+}
+
+/* Step 3: Fix Stats and Cards on Mobile */
+@media (max-width: 576px) {
+    /* Stack stats vertically */
+    .hero-stats,
+    .services-stats,
+    .portfolio-stats,
+    .blog-stats,
+    .contact-stats {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+        padding: 1rem !important;
+    }
+    
+    .stat {
+        text-align: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Fix filter buttons spacing */
+    .portfolio-filter,
+    .blog-filter,
+    .testimonials-filter {
+        gap: 0.5rem !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 0.875rem !important;
+        font-size: 0.8125rem !important;
+        margin: 0.25rem !important;
+    }
+    
+    /* Stack action buttons vertically */
+    .hero-actions,
+    .cta-actions {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        width: 100% !important;
+        align-items: center !important;
+    }
+    
+    .btn-large {
+        width: 100% !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* Step 4: Fix Form Fields */
+@media (max-width: 768px) {
+    /* Stack form fields vertically */
+    .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.875rem !important;
+        font-size: 1rem !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* Ensure contact form width */
+    .contact-form-section .container {
+        padding: 0 1rem !important;
+    }
+}
+
+/* Step 5: Additional Spacing Fixes */
+@media (max-width: 480px) {
+    /* Even tighter spacing for very small screens */
+    .container {
+        padding: 0 0.75rem !important;
+    }
+    
+    .section-padding {
+        padding: 2rem 0 !important;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem !important;
+    }
+    
+    .section-title {
+        font-size: 1.25rem !important;
+    }
+    
+    .btn {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.875rem !important;
+    }
+}
