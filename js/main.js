@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initTestimonialsCarousel();
     initScrollIndicator();
     initHamburgerMenu();
+    initResponsiveNav();
 });
 
 // Loading Screen
@@ -268,9 +269,17 @@ function initScrollIndicator() {
 function initHamburgerMenu() {
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
     
     if (hamburger && navMenu) {
-        hamburger.addEventListener('click', () => {
+        // Set initial state
+        if (window.innerWidth <= 992) {
+            hamburger.style.display = 'flex';
+        }
+
+        // Toggle menu on hamburger click
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
             navMenu.classList.toggle('active');
             hamburger.classList.toggle('active');
         });
@@ -284,12 +293,63 @@ function initHamburgerMenu() {
         });
         
         // Close menu when clicking on links
-        const navLinks = navMenu.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
                 hamburger.classList.remove('active');
             });
+        });
+
+        // Handle resize events
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 992) {
+                hamburger.style.display = 'flex';
+            } else {
+                hamburger.style.display = 'none';
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    }
+}
+
+// Responsive Navigation Handling
+function initResponsiveNav() {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    if (hamburger && navMenu) {
+        // Toggle menu on hamburger click
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            document.body.classList.toggle('nav-open');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.classList.remove('nav-open');
+            }
+        });
+        
+        // Handle dropdown menus
+        dropdowns.forEach(dropdown => {
+            const link = dropdown.querySelector('.nav-link');
+            const menu = dropdown.querySelector('.dropdown-menu');
+            
+            if (link && menu) {
+                link.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 992) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                        menu.style.maxHeight = menu.style.maxHeight ? null : menu.scrollHeight + "px";
+                    }
+                });
+            }
         });
     }
 }
@@ -499,15 +559,17 @@ window.addEventListener('error', (e) => {
     console.error('JavaScript error:', e.error);
 });
 
-// Service Worker registration for PWA capabilities
-if ('serviceWorker' in navigator) {
+// Service Worker Registration
+if ('serviceWorker' in navigator && 
+    (window.location.protocol === 'https:' || window.location.hostname === 'localhost')) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
+        const swUrl = window.location.origin + '/sw.js';
+        navigator.serviceWorker.register(swUrl)
             .then(registration => {
-                console.log('SW registered: ', registration);
+                console.log('SW registered:', registration);
             })
-            .catch(registrationError => {
-                console.log('SW registration failed: ', registrationError);
+            .catch(error => {
+                console.log('SW registration failed:', error);
             });
     });
 }
@@ -519,3 +581,86 @@ window.PortfolioApp = {
     updateActiveNavLink,
     showFormStatus
 };
+
+// Handle window resize
+let resizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        if (window.innerWidth > 992) {
+            // Reset mobile menu
+            const navMenu = document.getElementById('nav-menu');
+            const hamburger = document.getElementById('hamburger');
+            if (navMenu) navMenu.classList.remove('active');
+            if (hamburger) hamburger.classList.remove('active');
+            document.body.classList.remove('nav-open');
+            
+            // Reset dropdowns
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                const menu = dropdown.querySelector('.dropdown-menu');
+                if (menu) menu.style.maxHeight = null;
+                dropdown.classList.remove('active');
+            });
+        }
+    }, 250);
+});
+
+// Responsive Navigation Handler
+function handleResponsiveNav() {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    }
+}
+
+// Handle Responsive Images
+function handleResponsiveImages() {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        if (!img.hasAttribute('loading')) {
+            img.setAttribute('loading', 'lazy');
+        }
+        img.style.maxWidth = '100%';
+        img.style.height = 'auto';
+    });
+}
+
+// Handle Text Overflow
+function handleTextOverflow() {
+    const textElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p');
+    textElements.forEach(el => {
+        el.style.overflowWrap = 'break-word';
+        el.style.wordWrap = 'break-word';
+        el.style.hyphens = 'auto';
+    });
+}
+
+// Initialize Responsive Handlers
+document.addEventListener('DOMContentLoaded', () => {
+    handleResponsiveNav();
+    handleResponsiveImages();
+    handleTextOverflow();
+    
+    // Handle window resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            handleResponsiveImages();
+            handleTextOverflow();
+        }, 250);
+    });
+});

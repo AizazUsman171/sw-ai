@@ -12,20 +12,59 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzJBNzNGRiIvPgo8cGF0aCBkPSJNOCAxMkgxNlY4SDhWMTJaTTEwIDEwSDRIMTBaTTggMjBIMTZWMTZIOFYyMFpNMTAgMThIMTRWMTBIMThaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K">
+
+    <style>
+        /* Fix spacing between sections */
+        .hero-actions {
+            margin-bottom: 4rem !important;
+        }
+        
+        /* Fix metric cards */
+        .metric-card {
+            background: rgba(26, 31, 45, 0.95) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            overflow: hidden !important;
+        }
+        
+        .metric-icon {
+            overflow: hidden !important;
+        }
+        
+        /* Fix methodology section */
+        .process-timeline {
+            background: #1a1f2d !important;
+        }
+        
+        .process-step {
+            background: #1a1f2d !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        }
+        
+        /* Fix stat cards */
+        .stat {
+            background: rgba(26, 31, 45, 0.95) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            overflow: hidden !important;
+        }
+        
+        .stat-icon {
+            overflow: hidden !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-brain"></i>
-                <span>AI<strong>Dev</strong></span>
-            </div>
+            <a href="index.html" class="nav-logo"><img src="logo04.jpg" alt="SwentaSolutions Logo"></a>
             
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
@@ -34,18 +73,17 @@
                 <li class="nav-item">
                     <a href="about.html" class="nav-link">About</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a href="portfolio.html" class="nav-link active">Portfolio <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#ai-automation">AI Automation</a></li>
-                        <li><a href="#chatbots">Chatbot Development</a></li>
-                        <li><a href="#ai-development">AI Development</a></li>
-                        <li><a href="#crypto-trading">Crypto Trading</a></li>
-                        <li><a href="#recommendations">Recommendation Systems</a></li>
-                    </ul>
-                </li>
                 <li class="nav-item">
-                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#ai-services">AI Development</a></li>
+                        <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+                        <li><a href="services.html#it-services">IT & Managed Services</a></li>
+                        <li><a href="services.html#custom">Custom Solutions</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="testimonials.html" class="nav-link">Testimonials</a>
@@ -70,248 +108,556 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="page-hero">
+    <section class="portfolio-hero">
         <div class="hero-bg">
             <div class="neural-network-bg"></div>
         </div>
         <div class="container">
-            <div class="page-hero-content" data-aos="fade-up">
+            <div class="portfolio-hero-content">
+                <div class="hero-text" data-aos="fade-up">
                 <div class="hero-badge">
-                    <i class="fas fa-folder-open"></i>
-                    <span>Project Showcase</span>
+                        <i class="fas fa-trophy"></i>
+                        <span>Portfolio Showcase</span>
                 </div>
-                <h1 class="page-hero-title">
-                    My <span class="gradient-text">AI Portfolio</span>
+                    <h1>
+                        <span class="gradient-text">AI Cybersecurity and IT</span><br>
+                        Solutions Delivering Real Results
                 </h1>
-                <p class="page-hero-description">
-                    Explore real-world AI solutions I've developed for clients across various industries, from intelligent automation to cutting-edge recommendation systems.
-                </p>
-                <div class="page-hero-actions">
-                    <a href="contact.html" class="btn btn-primary btn-large">
+                    <p class="hero-subtitle">
+                        From Fortune 500 companies to innovative startups
+                    </p>
+                    <p class="hero-description">
+                        Explore a comprehensive collection of AI projects that have transformed businesses, 
+                        automated processes, and delivered measurable ROI. Each case study demonstrates 
+                        our technical expertise and commitment to excellence.
+                    </p>
+                    
+                    <div class="portfolio-stats">
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-value="50+">50+</span>
+                                <span class="stat-label">Projects Delivered</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-value="25+">25+</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-value="$5M+">$5M+</span>
+                                <span class="stat-label">Client Savings</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-value="98%">98%</span>
+                                <span class="stat-label">On-Time Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#featured-projects" class="btn btn-primary btn-large">
+                            <i class="fas fa-folder-open"></i>
+                            Explore Projects
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-white btn-large">
                         <i class="fas fa-handshake"></i>
                         Start Your Project
                     </a>
-                    <a href="#portfolio-showcase" class="btn btn-secondary btn-large">
-                        <i class="fas fa-arrow-down"></i>
-                        View Projects
-                    </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-illustration" data-aos="fade-left" data-aos-delay="200">
+                    <div class="success-metrics">
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="metric-value">94%</div>
+                            <div class="metric-label">Success Rate</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="metric-value">100%</div>
+                            <div class="metric-label">Satisfaction</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="metric-value">15+</div>
+                            <div class="metric-label">Industries</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="metric-value">12</div>
+                            <div class="metric-label">Countries</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Showcase -->
-    <section id="portfolio-showcase" class="portfolio-showcase section-padding">
+    <!-- Featured Projects -->
+    <section id="featured-projects" class="featured-projects section-padding">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-badge">Featured Work</span>
-                <h2 class="section-title">Project Case Studies</h2>
+                <h2 class="section-title">Success Stories</h2>
                 <p class="section-description">
-                    Detailed case studies showcasing the impact and results of AI implementations
+                    Comprehensive case studies showcasing the transformative impact of AI, cybersecurity, and IT solutions across industries. Each project highlights our approach, technical execution, and measurable business results..
                 </p>
             </div>
 
             <!-- Portfolio Filter -->
             <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="200">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="automation">Automation</button>
-                <button class="filter-btn" data-filter="chatbots">Chatbots</button>
-                <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
-                <button class="filter-btn" data-filter="crypto">Crypto Trading</button>
-                <button class="filter-btn" data-filter="recommendations">Recommendations</button>
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i>
+                    All Projects
+                </button>
+                <button class="filter-btn" data-filter="automation">
+                    <i class="fas fa-cogs"></i>
+                    Automation
+                </button>
+                <button class="filter-btn" data-filter="chatbots">
+                    <i class="fas fa-comments"></i>
+                    Chatbots & AI
+                </button>
+                <button class="filter-btn" data-filter="ml-analytics">
+                    <i class="fas fa-brain"></i>
+                    ML & Analytics
+                </button>
+                <button class="filter-btn" data-filter="fintech">
+                    <i class="fas fa-chart-line"></i>
+                    FinTech
+                </button>
+                <button class="filter-btn" data-filter="computer-vision">
+                    <i class="fas fa-eye"></i>
+                    Computer Vision
+                </button>
             </div>
 
             <!-- Portfolio Grid -->
             <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="400">
-                <!-- Project 1: E-commerce Chatbot -->
-                <div class="portfolio-item" data-category="chatbots">
-                    <div class="portfolio-image">
-                        <div class="portfolio-placeholder">
+                <!-- Project 1: E-commerce AI Chatbot -->
+                <div class="portfolio-card" data-category="chatbots">
+                    <div class="card-header">
+                        <div class="project-status">
+                            <span class="status-badge live">Live</span>
+                        </div>
+                        <div class="project-type">
                             <i class="fas fa-comments"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>E-commerce AI Chatbot</h3>
-                                <p>Intelligent customer service bot with 24/7 support capabilities</p>
-                                <div class="portfolio-tags">
-                                    <span class="tag">GPT-4</span>
-                                    <span class="tag">LangChain</span>
-                                    <span class="tag">Webhook</span>
-                                </div>
-                                <div class="portfolio-actions">
-                                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
-                                    <a href="#" class="btn btn-secondary btn-sm">Live Demo</a>
-                                </div>
-                            </div>
+                            <span>Conversational AI</span>
                         </div>
                     </div>
-                    <div class="portfolio-content">
-                        <h4>E-commerce AI Chatbot</h4>
-                        <p>Reduced customer service workload by 70% while improving response times</p>
-                        <div class="portfolio-stats">
-                            <span><i class="fas fa-chart-line"></i> 70% efficiency gain</span>
-                            <span><i class="fas fa-clock"></i> <2s response time</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: Recommendation Engine -->
-                <div class="portfolio-item" data-category="recommendations ai-ml">
-                    <div class="portfolio-image">
-                        <div class="portfolio-placeholder">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Personalized Recommendation System</h3>
-                                <p>Advanced ML-powered product recommendation engine</p>
-                                <div class="portfolio-tags">
-                                    <span class="tag">Python</span>
-                                    <span class="tag">TensorFlow</span>
-                                    <span class="tag">RAG</span>
-                                </div>
-                                <div class="portfolio-actions">
-                                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
-                                    <a href="#" class="btn btn-secondary btn-sm">Case Study</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h4>Recommendation Engine</h4>
-                        <p>Increased user engagement by 45% with personalized product suggestions</p>
-                        <div class="portfolio-stats">
-                            <span><i class="fas fa-users"></i> 45% engagement boost</span>
-                            <span><i class="fas fa-shopping-cart"></i> 23% conversion rate</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: Crypto Trading Bot -->
-                <div class="portfolio-item" data-category="crypto ai-ml">
-                    <div class="portfolio-image">
-                        <div class="portfolio-placeholder">
+                    
+                    <div class="card-visual">
+                        <div class="project-icon">
                             <i class="fas fa-robot"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Reinforcement Learning Crypto Bot</h3>
-                                <p>Intelligent trading system with advanced risk management</p>
-                                <div class="portfolio-tags">
-                                    <span class="tag">RL</span>
-                                    <span class="tag">Python</span>
-                                    <span class="tag">APIs</span>
                                 </div>
-                                <div class="portfolio-actions">
-                                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
-                                    <a href="#" class="btn btn-secondary btn-sm">Performance</a>
+                        <div class="visual-metrics">
+                            <div class="metric">
+                                <span class="value">70%</span>
+                                <span class="label">Cost Reduction</span>
                                 </div>
+                            <div class="metric">
+                                <span class="value">&lt;2s</span>
+                                <span class="label">Response Time</span>
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-content">
-                        <h4>Crypto Trading Bot</h4>
-                        <p>Automated trading with sophisticated risk management and performance tracking</p>
-                        <div class="portfolio-stats">
-                            <span><i class="fas fa-chart-line"></i> 15% monthly ROI</span>
-                            <span><i class="fas fa-shield-alt"></i> Risk-managed</span>
+                    
+                    <div class="card-content">
+                        <h3>E-commerce AI Customer Support</h3>
+                        <p class="project-summary">
+                            Intelligent chatbot handling 80% of customer inquiries autonomously, 
+                            reducing support costs while improving satisfaction scores by 45%.
+                        </p>
+                        
+                        <div class="project-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>24/7 multilingual support</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Seamless human handoff</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Real-time analytics</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech">GPT-4</span>
+                            <span class="tech">LangChain</span>
+                            <span class="tech">FastAPI</span>
+                            <span class="tech">PostgreSQL</span>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-primary">View Case Study</a>
+                            <a href="#" class="btn btn-outline">Live Demo</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 4: Business Automation -->
-                <div class="portfolio-item" data-category="automation">
-                    <div class="portfolio-image">
-                        <div class="portfolio-placeholder">
+                <!-- Project 2: Predictive Analytics Platform -->
+                <div class="portfolio-card" data-category="ml-analytics">
+                    <div class="card-header">
+                        <div class="project-status">
+                            <span class="status-badge completed">Deployed</span>
+                        </div>
+                        <div class="project-type">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Predictive Analytics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-visual">
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                                </div>
+                        <div class="visual-metrics">
+                            <div class="metric">
+                                <span class="value">94%</span>
+                                <span class="label">Accuracy</span>
+                                </div>
+                            <div class="metric">
+                                <span class="value">$1.2M</span>
+                                <span class="label">Savings</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <h3>Supply Chain Optimization AI</h3>
+                        <p class="project-summary">
+                            Machine learning platform predicting demand patterns and optimizing inventory 
+                            management for a Fortune 500 manufacturing company.
+                        </p>
+                        
+                        <div class="project-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Real-time demand forecasting</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Automated reorder points</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Risk assessment alerts</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech">Python</span>
+                            <span class="tech">TensorFlow</span>
+                            <span class="tech">Apache Kafka</span>
+                            <span class="tech">MLOps</span>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-primary">View Case Study</a>
+                            <a href="#" class="btn btn-outline">Technical Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: FinTech Trading Algorithm -->
+                <div class="portfolio-card" data-category="fintech">
+                    <div class="card-header">
+                        <div class="project-status">
+                            <span class="status-badge live">Active</span>
+                        </div>
+                        <div class="project-type">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Algorithmic Trading</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-visual">
+                        <div class="project-icon">
+                            <i class="fas fa-coins"></i>
+                                </div>
+                        <div class="visual-metrics">
+                            <div class="metric">
+                                <span class="value">23%</span>
+                                <span class="label">Annual ROI</span>
+                                </div>
+                            <div class="metric">
+                                <span class="value">0.12</span>
+                                <span class="label">Sharpe Ratio</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <h3>Quantitative Trading System</h3>
+                        <p class="project-summary">
+                            Advanced reinforcement learning algorithm for cryptocurrency trading with 
+                            sophisticated risk management and portfolio optimization strategies.
+                        </p>
+                        
+                        <div class="project-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Multi-exchange arbitrage</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Dynamic position sizing</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Real-time monitoring</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech">Python</span>
+                            <span class="tech">Deep RL</span>
+                            <span class="tech">REST APIs</span>
+                            <span class="tech">Redis</span>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-primary">View Performance</a>
+                            <a href="#" class="btn btn-outline">Algorithm Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Intelligent Process Automation -->
+                <div class="portfolio-card" data-category="automation">
+                    <div class="card-header">
+                        <div class="project-status">
+                            <span class="status-badge completed">Deployed</span>
+                        </div>
+                        <div class="project-type">
                             <i class="fas fa-cogs"></i>
+                            <span>Process Automation</span>
                         </div>
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>End-to-End Business Automation</h3>
-                                <p>Complete workflow automation using N8N and Zapier</p>
-                                <div class="portfolio-tags">
-                                    <span class="tag">N8N</span>
-                                    <span class="tag">Zapier</span>
-                                    <span class="tag">Make.com</span>
+                    </div>
+                    
+                    <div class="card-visual">
+                        <div class="project-icon">
+                            <i class="fas fa-magic"></i>
                                 </div>
-                                <div class="portfolio-actions">
-                                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
-                                    <a href="#" class="btn btn-secondary btn-sm">Workflow</a>
+                        <div class="visual-metrics">
+                            <div class="metric">
+                                <span class="value">40h</span>
+                                <span class="label">Weekly Savings</span>
                                 </div>
+                            <div class="metric">
+                                <span class="value">99%</span>
+                                <span class="label">Accuracy</span>
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-content">
-                        <h4>Business Process Automation</h4>
-                        <p>Streamlined operations saving 20+ hours weekly through intelligent automation</p>
-                        <div class="portfolio-stats">
-                            <span><i class="fas fa-clock"></i> 20+ hours saved</span>
-                            <span><i class="fas fa-percentage"></i> 95% accuracy</span>
+                    
+                    <div class="card-content">
+                        <h3>End-to-End Business Automation</h3>
+                        <p class="project-summary">
+                            Comprehensive workflow automation connecting CRM, accounting, and inventory systems 
+                            with intelligent decision-making capabilities.
+                        </p>
+                        
+                        <div class="project-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Multi-system integration</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Exception handling</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Audit trail & compliance</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech">N8N</span>
+                            <span class="tech">Zapier</span>
+                            <span class="tech">Make.com</span>
+                            <span class="tech">Webhooks</span>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-primary">View Workflow</a>
+                            <a href="#" class="btn btn-outline">ROI Calculator</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 5: Document AI -->
-                <div class="portfolio-item" data-category="ai-ml automation">
-                    <div class="portfolio-image">
-                        <div class="portfolio-placeholder">
+                <!-- Project 5: Computer Vision Quality Control -->
+                <div class="portfolio-card" data-category="computer-vision">
+                    <div class="card-header">
+                        <div class="project-status">
+                            <span class="status-badge live">Production</span>
+                        </div>
+                        <div class="project-type">
+                            <i class="fas fa-eye"></i>
+                            <span>Computer Vision</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-visual">
+                        <div class="project-icon">
+                            <i class="fas fa-search"></i>
+                                </div>
+                        <div class="visual-metrics">
+                            <div class="metric">
+                                <span class="value">99.8%</span>
+                                <span class="label">Detection Rate</span>
+                                </div>
+                            <div class="metric">
+                                <span class="value">50x</span>
+                                <span class="label">Faster</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <h3>AI-Powered Quality Inspection</h3>
+                        <p class="project-summary">
+                            Real-time defect detection system for manufacturing lines using advanced computer vision 
+                            and deep learning models with sub-millimeter precision.
+                        </p>
+                        
+                        <div class="project-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Real-time processing</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Multi-defect classification</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Edge deployment</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech">OpenCV</span>
+                            <span class="tech">YOLO</span>
+                            <span class="tech">PyTorch</span>
+                            <span class="tech">ONNX</span>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-primary">View Results</a>
+                            <a href="#" class="btn btn-outline">Technical Specs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Natural Language Processing Suite -->
+                <div class="portfolio-card" data-category="chatbots">
+                    <div class="card-header">
+                        <div class="project-status">
+                            <span class="status-badge completed">Delivered</span>
+                        </div>
+                        <div class="project-type">
+                            <i class="fas fa-language"></i>
+                            <span>NLP & Analysis</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-visual">
+                        <div class="project-icon">
                             <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Intelligent Document Processing</h3>
-                                <p>OCR and NLP-powered document analysis system</p>
-                                <div class="portfolio-tags">
-                                    <span class="tag">OCR</span>
-                                    <span class="tag">NLP</span>
-                                    <span class="tag">OpenAI</span>
                                 </div>
-                                <div class="portfolio-actions">
-                                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
-                                    <a href="#" class="btn btn-secondary btn-sm">Demo</a>
+                        <div class="visual-metrics">
+                            <div class="metric">
+                                <span class="value">15</span>
+                                <span class="label">Languages</span>
                                 </div>
+                            <div class="metric">
+                                <span class="value">92%</span>
+                                <span class="label">Sentiment Accuracy</span>
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-content">
-                        <h4>Document AI System</h4>
-                        <p>Automated document processing with 98% accuracy for invoice and resume parsing</p>
-                        <div class="portfolio-stats">
-                            <span><i class="fas fa-percentage"></i> 98% accuracy</span>
-                            <span><i class="fas fa-tachometer-alt"></i> 10x faster</span>
+                    
+                    <div class="card-content">
+                        <h3>Document Intelligence Platform</h3>
+                        <p class="project-summary">
+                            Comprehensive NLP suite for document analysis, sentiment tracking, and 
+                            automated content categorization across multiple languages and formats.
+                        </p>
+                        
+                        <div class="project-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>OCR & text extraction</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Entity recognition</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Sentiment analysis</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech">spaCy</span>
+                            <span class="tech">Transformers</span>
+                            <span class="tech">OpenAI</span>
+                            <span class="tech">ElasticSearch</span>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-primary">View Demo</a>
+                            <a href="#" class="btn btn-outline">API Docs</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 6: Voice Assistant -->
-                <div class="portfolio-item" data-category="chatbots ai-ml">
-                    <div class="portfolio-image">
-                        <div class="portfolio-placeholder">
-                            <i class="fas fa-microphone"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>AI Voice Assistant</h3>
-                                <p>Multi-language voice AI with Whisper API integration</p>
-                                <div class="portfolio-tags">
-                                    <span class="tag">Whisper</span>
-                                    <span class="tag">TTS</span>
-                                    <span class="tag">Multi-lang</span>
-                                </div>
-                                <div class="portfolio-actions">
-                                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
-                                    <a href="#" class="btn btn-secondary btn-sm">Try It</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h4>Voice AI Assistant</h4>
-                        <p>Intelligent voice interface supporting multiple languages and commands</p>
-                        <div class="portfolio-stats">
-                            <span><i class="fas fa-globe"></i> 12 languages</span>
-                            <span><i class="fas fa-microphone"></i> 95% accuracy</span>
-                        </div>
+            <div class="portfolio-cta" data-aos="fade-up" data-aos-delay="600">
+                <div class="cta-content">
+                    <h3>Want to See More Projects?</h3>
+                    <p>Explore additional case studies and technical deep-dives in our comprehensive project archive.</p>
+                    <div class="cta-actions">
+                        <a href="contact.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-calendar"></i>
+                            Schedule a Demo
+                        </a>
+                        <a href="testimonials.html" class="btn btn-secondary btn-large">
+                            <i class="fas fa-quote-left"></i>
+                            Client Reviews
+                        </a>
                     </div>
                 </div>
             </div>
@@ -322,55 +668,165 @@
     <section class="technologies section-padding bg-light">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Tech Stack</span>
-                <h2 class="section-title">Technologies & Frameworks</h2>
+                <span class="section-badge">Technology Stack</span>
+                <h2 class="section-title">Cutting-Edge Tools & Frameworks</h2>
                 <p class="section-description">
-                    Cutting-edge tools and technologies used in my AI projects
+                    Leveraging the latest in AI, machine learning, and automation technologies to deliver superior results
                 </p>
             </div>
 
-            <div class="tech-grid" data-aos="fade-up" data-aos-delay="200">
-                <div class="tech-item">
-                    <div class="tech-icon">
+            <div class="expertise-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="expertise-card">
+                    <div class="card-icon">
                         <i class="fas fa-link"></i>
                     </div>
-                    <h4>LangChain</h4>
-                    <p>Building complex AI applications</p>
+                    <h3>LangChain & AI Orchestration</h3>
+                    <p>Building complex AI workflows with advanced prompt engineering and chain-of-thought reasoning.</p>
+                    <ul class="tech-stack">
+                        <li>LangChain</li>
+                        <li>LangSmith</li>
+                        <li>CrewAI</li>
+                        <li>AutoGen</li>
+                    </ul>
                 </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
+                
+                <div class="expertise-card">
+                    <div class="card-icon">
                         <i class="fas fa-brain"></i>
                     </div>
-                    <h4>OpenAI GPT-4</h4>
-                    <p>Advanced language models</p>
+                    <h3>Machine Learning & Deep Learning</h3>
+                    <p>Advanced ML models for classification, regression, computer vision, and natural language processing.</p>
+                    <ul class="tech-stack">
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>Scikit-learn</li>
+                        <li>Hugging Face</li>
+                    </ul>
                 </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <i class="fas fa-robot"></i>
+                
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-comments"></i>
                     </div>
-                    <h4>CrewAI</h4>
-                    <p>Multi-agent AI systems</p>
+                    <h3>Conversational AI & NLP</h3>
+                    <p>Intelligent chatbots, voice assistants, and natural language understanding systems.</p>
+                    <ul class="tech-stack">
+                        <li>OpenAI GPT</li>
+                        <li>Anthropic Claude</li>
+                        <li>Whisper API</li>
+                        <li>spaCy</li>
+                    </ul>
                 </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h4>TensorFlow</h4>
-                    <p>Machine learning models</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
-                        <i class="fas fa-microphone"></i>
-                    </div>
-                    <h4>Whisper API</h4>
-                    <p>Speech recognition</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">
+                
+                <div class="expertise-card">
+                    <div class="card-icon">
                         <i class="fas fa-cogs"></i>
                     </div>
-                    <h4>N8N & Zapier</h4>
-                    <p>Workflow automation</p>
+                    <h3>Process Automation</h3>
+                    <p>End-to-end workflow automation with intelligent decision-making and exception handling.</p>
+                    <ul class="tech-stack">
+                        <li>N8N</li>
+                        <li>Zapier</li>
+                        <li>Make.com</li>
+                        <li>UiPath</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Computer Vision</h3>
+                    <p>Advanced image processing, object detection, and visual recognition systems.</p>
+                    <ul class="tech-stack">
+                        <li>OpenCV</li>
+                        <li>YOLO</li>
+                        <li>MediaPipe</li>
+                        <li>Detectron2</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data & Infrastructure</h3>
+                    <p>Scalable data pipelines, vector databases, and cloud deployment solutions.</p>
+                    <ul class="tech-stack">
+                        <li>PostgreSQL</li>
+                        <li>Pinecone</li>
+                        <li>Docker</li>
+                        <li>AWS/GCP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Our Methodology</span>
+                <h2 class="section-title">From Concept to Deployment</h2>
+                <p class="section-description">
+                    A proven process that ensures successful AI project delivery from initial consultation to ongoing support
+                </p>
+            </div>
+
+            <div class="services-process" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Discovery & Analysis</h3>
+                            <p>We begin with a comprehensive assessment of your business requirements, existing systems, and AI readiness.</p>
+                            <div class="step-features">
+                                <span>Business Process Analysis</span>
+                                <span>Technical Assessment</span>
+                                <span>ROI Projection</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Solution Design</h3>
+                            <p>Custom AI architecture design tailored to your specific needs, with detailed technical specifications.</p>
+                            <div class="step-features">
+                                <span>Architecture Planning</span>
+                                <span>Technology Selection</span>
+                                <span>Integration Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Development & Testing</h3>
+                            <p>Agile development with continuous testing, validation, and iterative improvements throughout the process.</p>
+                            <div class="step-features">
+                                <span>Agile Development</span>
+                                <span>Quality Assurance</span>
+                                <span>Performance Testing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Deployment & Support</h3>
+                            <p>Smooth deployment with comprehensive training, documentation, and ongoing maintenance support.</p>
+                            <div class="step-features">
+                                <span>Production Deployment</span>
+                                <span>User Training</span>
+                                <span>24/7 Support</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -380,16 +836,16 @@
     <section class="cta section-padding bg-primary">
         <div class="container">
             <div class="cta-content" data-aos="fade-up">
-                <h2>Ready to Build Your Next AI Solution?</h2>
-                <p>Let's discuss how we can create innovative AI solutions for your business needs</p>
+                <h2>Ready to Transform Your Business with AI?</h2>
+                <p>Join the ranks of successful companies leveraging AI for competitive advantage. Let's discuss your project requirements and create a custom solution that delivers measurable results.</p>
                 <div class="cta-actions">
                     <a href="contact.html" class="btn btn-white btn-large">
                         <i class="fas fa-calendar"></i>
-                        Schedule Consultation
+                        Schedule Free Consultation
                     </a>
                     <a href="services.html" class="btn btn-outline-white btn-large">
                         <i class="fas fa-list"></i>
-                        View Services
+                        Explore Services
                     </a>
                 </div>
             </div>
@@ -401,14 +857,12 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="footer-logo">
-                        <i class="fas fa-brain"></i>
-                        <span>AI<strong>Dev</strong></span>
-                    </div>
-                    <p>Transforming businesses through intelligent automation and cutting-edge AI solutions.</p>
+                    <a href="index.html" class="footer-logo"><img src="logo04.jpg" alt="SwentaSolutions Logo"></a>
+                    <p>
+                        Empowering businesses through innovative AI, Cyber Security, and Cloud Computing solutions.
+                    </p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-link"><i class="fas fa-globe"></i></a>
                     </div>
@@ -418,10 +872,10 @@
                     <div class="footer-column">
                         <h4>Services</h4>
                         <ul>
-                            <li><a href="services.html">AI Development</a></li>
-                            <li><a href="services.html">Chatbot Development</a></li>
-                            <li><a href="services.html">Computer Vision</a></li>
-                            <li><a href="services.html">Content Generation</a></li>
+                            <li><a href="services.html#ai-services">AI Solutions</a></li>
+                            <li><a href="services.html#cybersecurity">Cyber Security</a></li>
+                            <li><a href="services.html#cloud-computing">Cloud Computing</a></li>
+                            <li><a href="services.html#custom">Custom Solutions</a></li>
                         </ul>
                     </div>
                     
@@ -436,12 +890,12 @@
                     </div>
                     
                     <div class="footer-column">
-                        <h4>Resources</h4>
+                        <h4>Contact</h4>
                         <ul>
-                            <li><a href="blog.html">Technical Articles</a></li>
-                            <li><a href="contact.html">Consultation</a></li>
-                            <li><a href="#" target="_blank">Upwork Profile</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact.html">Get in Touch</a></li>
+                            <li><a href="contact.html#locations">Global Offices</a></li>
+                            <li><a href="contact.html#support">Support</a></li>
+                            <li><a href="contact.html#careers">Careers</a></li>
                         </ul>
                     </div>
                 </div>
@@ -449,7 +903,7 @@
             
             <div class="footer-bottom">
                 <div class="footer-copyright">
-                    <p>&copy; 2024 AI Developer Portfolio. All rights reserved.</p>
+                    <p>&copy; 2024 SwentaSolutions. All rights reserved.</p>
                 </div>
                 <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
@@ -462,5 +916,53 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+    
+    <!-- Additional Portfolio Script to ensure functionality -->
+    <script>
+        // Ensure portfolio filtering works
+        document.addEventListener('DOMContentLoaded', function() {
+            // Backup portfolio filtering if main script fails
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioCards = document.querySelectorAll('.portfolio-card');
+            
+            if (filterButtons.length > 0 && portfolioCards.length > 0) {
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        // Remove active from all buttons
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        // Add active to clicked button
+                        this.classList.add('active');
+                        
+                        const filter = this.getAttribute('data-filter');
+                        
+                        // Filter cards
+                        portfolioCards.forEach(card => {
+                            const category = card.getAttribute('data-category');
+                            if (filter === 'all' || category === filter) {
+                                card.style.display = 'block';
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            } else {
+                                card.style.opacity = '0';
+                                card.style.transform = 'translateY(30px)';
+                                setTimeout(() => {
+                                    card.style.display = 'none';
+                                }, 300);
+                            }
+                        });
+                    });
+                });
+            }
+            
+            // Ensure all cards are visible by default
+            portfolioCards.forEach(card => {
+                card.style.display = 'block';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+                card.style.transition = 'all 0.3s ease';
+            });
+        });
+    </script>
 </body>
 </html> 
