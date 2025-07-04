@@ -317,8 +317,8 @@ p {
 
 .dropdown-menu {
     position: absolute;
-    top: 100%;
-    left: 0;
+  
+    left: 40;
     background: var(--dark-bg-secondary);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-dark);
@@ -334,6 +334,8 @@ p {
 
 .dropdown:hover .dropdown-menu {
     opacity: 1;
+    position: fixed;
+    left: 40%;
     visibility: visible;
     transform: translateY(0);
 }
@@ -1368,6 +1370,10 @@ p {
 /* About Page Styles */
 .about-hero {
     padding-top: 120px;
+    background: 
+        radial-gradient(ellipse at top left, var(--primary-color) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, var(--secondary-color) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom left, var(--accent-color) 0%, transparent 50%);
 }
 
 .about-hero-content {
@@ -3951,6 +3957,15 @@ p {
     }
 }
 
+@media (max-width: 992px) {
+  .nav-item.dropdown .dropdown-menu {
+    display: none !important;
+  }
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block !important;
+  }
+}
+
 @media (max-width: 480px) {
     .testimonials-hero .hero-text h1 {
         font-size: 2rem;
@@ -5552,6 +5567,25 @@ p {
     }
 }
 
+/* --- Fix: Only show Services dropdown on hover for <=992px screens --- */
+@media (max-width: 992px) {
+  .nav-item.dropdown .dropdown-menu {
+    display: none !important;
+  }
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block !important;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 200px;
+    background: var(--dark-bg-secondary);
+    border: 1px solid var(--dark-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    z-index: 1000;
+  }
+}
+
 /* Enhanced Navigation Styles for Mega Menu */
 .nav-item.mega-menu .nav-link i {
     margin-left: var(--spacing-xs);
@@ -6384,7 +6418,7 @@ p {
         padding: 2rem;
         transition: 0.3s ease;
         z-index: 999;
-    }
+    }   
 
     .nav-menu.active {
         left: 0;
@@ -8418,7 +8452,7 @@ p {
 -content
 -btn
 -card
-border-radius:24px!important
+/* border-radius:24px!important */
 
 /* Fix spacing between hero buttons and next section */
 .hero-actions {
@@ -11149,6 +11183,13 @@ img[src="clientele.PNG"] {
     height: 10px; /* Adjust height as needed */
     width: 50px;
     display: block;
+}
+
+/* Footer Logo Styling */
+.footer-logo img {
+    height: 10px; /* Adjust height as needed */
+    width: 50px;
+    margin-bottom: 1rem;
 }
 
 /* Footer Logo Styling */

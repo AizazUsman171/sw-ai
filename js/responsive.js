@@ -31,11 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (link && menu) {
             link.addEventListener('click', function(e) {
-                if (window.innerWidth <= 992) {
-                    e.preventDefault();
+                
                     menu.style.maxHeight = menu.style.maxHeight ? null : menu.scrollHeight + "px";
                     dropdown.classList.toggle('active');
-                }
+            
             });
         }
     });

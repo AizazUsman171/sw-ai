@@ -47,7 +47,6 @@ function initLoader() {
 function initNavigation() {
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('.nav-link');
-    
     // Handle scroll effect on navbar
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -59,12 +58,12 @@ function initNavigation() {
     
     // Smooth scrolling for anchor links
     navLinks.forEach(link => {
+        // Handle anchor links (same-page scroll)
         if (link.getAttribute('href').startsWith('#')) {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
-                
                 if (targetSection) {
                     const offsetTop = targetSection.offsetTop - 80;
                     window.scrollTo({
@@ -72,11 +71,23 @@ function initNavigation() {
                         behavior: 'smooth'
                     });
                 }
-                
                 // Update active nav link
                 updateActiveNavLink(this);
             });
         }
+        // On small screens, prevent navigation for parent 'Services' link only
+        if (
+            link.getAttribute('href') === 'services.html' &&
+            link.parentElement.classList.contains('dropdown')
+        ) {
+            link.addEventListener('click', function(e) {
+                if (window.innerWidth <= 992) {
+                    e.preventDefault();
+                    // Dropdown is shown via CSS hover, so no need to toggle class
+                }
+            });
+        }
+        // All other links (including dropdown menu items) work as normal
     });
     
     // Update active nav link based on scroll position
