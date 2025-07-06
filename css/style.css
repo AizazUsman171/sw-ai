@@ -7908,9 +7908,7 @@ img[src="clientele.PNG"] {
         margin: 0.5rem 0;
         list-style: none;
     }
-    .new:hover{
-background-color: red;
-    }
+    
     .nav-item.dropdown .dropdown-menu li {
         margin: 0;
     }
@@ -7937,31 +7935,55 @@ background-color: red;
         transform: rotate(180deg);
     }
     
-    /* Navigation Actions */
+    /* Navigation Actions - Fixed Layout for Mobile */
     .nav-actions {
-        gap: 0.5rem;
-        flex-direction: column;
-        width: 100%;
+        order: 3;
         display: flex;
+        flex-direction: row;
         align-items: center;
+        gap: 0.75rem;
+        margin-left: auto;
     }
     
+    /* Get Started Button - Improved Design */
     .nav-actions .btn {
-        width: 100%;
-        text-align: center;
-        justify-content: center;
         padding: 0.5rem 1rem;
         font-size: 0.875rem;
-        display: block;
+        font-weight: 600;
+        border-radius: 8px;
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        text-decoration: none;
+        border: none;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        box-shadow: 0 2px 8px rgba(42, 115, 255, 0.3);
     }
     
-    /* Hamburger Menu */
+    .nav-actions .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(42, 115, 255, 0.4);
+        background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    }
+    
+    /* Hamburger Menu - Positioned at extreme right */
     .hamburger {
         display: flex !important;
-        z-index: 1000;
-        margin-left: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
         cursor: pointer;
         position: relative;
+        z-index: 1001;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.1);
+        transition: background-color 0.3s ease;
+    }
+    
+    .hamburger:hover {
+        background: rgba(255, 255, 255, 0.2);
     }
     
     .hamburger span {
