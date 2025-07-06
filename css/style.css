@@ -8776,19 +8776,52 @@ img[src="clientele.PNG"] {
         grid-template-columns: 1fr;
     }
     
+    /* Footer Mobile Optimization */
     .footer-content {
         grid-template-columns: 1fr;
-        gap: var(--spacing-2xl);
+        gap: var(--spacing-xl);
+        text-align: center;
     }
     
     .footer-links {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-lg);
+    }
+    
+    .footer-column {
+        text-align: left;
     }
     
     .footer-bottom {
         flex-direction: column;
         text-align: center;
+        gap: var(--spacing-md);
+    }
+    
+    /* Improved Card Responsive Fixes */
+    .expertise-card,
+    .portfolio-card,
+    .testimonial-card,
+    .contact-card {
+        max-width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .card-visual,
+    .card-content {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .tech-stack {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .tech-stack .tech {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
     }
     
     .cta-content h2 {
