@@ -8716,24 +8716,25 @@ img[src="clientele.PNG"] {
 
     .nav-menu {
         position: fixed;
-        top: 100%;
+        top: 80px;
         left: 0;
         right: 0;
-        background: white;
+        background: var(--dark-bg-primary);
         flex-direction: column;
         padding: var(--spacing-lg);
         box-shadow: var(--shadow-xl);
-        transform: translateX(-100%);
+        transform: translateY(-100%);
         transition: transform var(--transition-normal);
         gap: var(--spacing-md);
+        z-index: 999;
     }
     
     .nav-menu.active {
-        transform: translateX(0);
+        transform: translateY(0);
     }
     
     .hamburger {
-        display: flex;
+        display: flex !important;
     }
     
     .dropdown-menu {
