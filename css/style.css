@@ -283,9 +283,19 @@ p {
 }
 
 .nav-menu {
-    display: none; /* Hide the menu by default on mobile */
+    display: flex; /* Show on desktop by default */
     list-style: none;
     gap: var(--spacing-xl);
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile styles for nav-menu */
+@media (max-width: 992px) {
+    .nav-menu {
+        display: none; /* Hide the menu by default on mobile */
+    }
 }
 
 .nav-menu.active {
