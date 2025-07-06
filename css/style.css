@@ -398,10 +398,17 @@ p {
 }
 
 .hamburger {
-    display: none;
+    display: none; /* Hidden by default on desktop */
     flex-direction: column;
     cursor: pointer;
     padding: var(--spacing-sm);
+}
+
+/* Show hamburger on mobile */
+@media (max-width: 992px) {
+    .hamburger {
+        display: flex !important;
+    }
 }
 
 .hamburger span {
