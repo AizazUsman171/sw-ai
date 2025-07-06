@@ -7808,6 +7808,8 @@ img[src="clientele.PNG"] {
     /* Container */
     .container {
         padding: 0 1rem;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     
     /* Navbar */
@@ -7820,14 +7822,25 @@ img[src="clientele.PNG"] {
         height: 80px;
     }
     
-    /* Navigation Container */
+    /* Navigation Container - Fixed Layout */
     .nav-container {
         padding: 0.75rem 1rem;
-        gap: 0.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        position: relative;
+    }
+    
+    /* Logo positioning - extreme left */
+    .nav-logo {
+        order: 1;
+        margin-right: auto;
+    }
+    
+    .nav-logo img {
+        height: 40px;
+        width: auto;
     }
     
     /* Navigation Menu */
@@ -7837,10 +7850,16 @@ img[src="clientele.PNG"] {
         max-height: calc(100vh - 80px);
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: var(--dark-bg-primary);
+        border-top: 1px solid var(--dark-border);
     }
     
     .nav-menu.active {
-        left: 0;
+        display: block;
     }
     
     /* Navigation Items */
@@ -7855,35 +7874,28 @@ img[src="clientele.PNG"] {
         padding: 0.75rem;
         width: 100%;
         display: block;
+        color: var(--gray-300);
     }
     
     /* Dropdown Menu */
     .dropdown-menu {
         display: none;
-        position: absolute;
-        left: 0;
-        top: 100%;
-        min-width: 200px;
+        position: static;
+        width: 100%;
         background: var(--dark-bg-secondary);
         border: 1px solid var(--dark-border);
         border-radius: var(--radius-lg);
         box-shadow: var(--shadow-md);
-        z-index: 9999;
         padding: 0;
-        margin: 0;
+        margin: 0.5rem 0;
         list-style: none;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
-        width: 100%;
-        margin-top: 0.5rem;
-       
-      
-       
     }
     
     .nav-item.dropdown {
-        position: absolute;
+        position: relative;
     }
     
     .nav-item.dropdown.active .dropdown-menu {
@@ -7893,9 +7905,8 @@ img[src="clientele.PNG"] {
         border: 1px solid var(--dark-border);
         box-shadow: var(--shadow-md);
         padding: 0;
-        margin: 0;
+        margin: 0.5rem 0;
         list-style: none;
-        z-index: 1000;
     }
     .new:hover{
 background-color: red;
