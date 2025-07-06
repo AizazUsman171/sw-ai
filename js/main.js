@@ -46,13 +46,8 @@ function initLoader() {
     const loadingScreen = document.getElementById('loading-screen');
     
     if (loadingScreen) {
-        // Simulate loading time
-        setTimeout(() => {
-            loadingScreen.style.opacity = '0';
-            setTimeout(() => {
-                loadingScreen.style.display = 'none';
-            }, 500);
-        }, 2000);
+        // Hide immediately for testing
+        loadingScreen.style.display = 'none';
     }
 }
 
