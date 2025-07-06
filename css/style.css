@@ -370,11 +370,58 @@ p {
 }
 
 .hamburger span {
-    width: 25px;
-    height: 3px;
+    width: 22px;
+    height: 2px;
     background: var(--gray-300);
     margin: 2px 0;
-    transition: var(--transition-normal);
+    transition: all 0.3s ease-in-out;
+    display: block;
+    border-radius: 1px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    background: var(--primary-color);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    background: var(--primary-color);
+}
+
+/* Responsive Card Fixes */
+.expertise-card,
+.portfolio-card,
+.testimonial-card,
+.contact-card {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: var(--spacing-lg);
+    box-sizing: border-box;
+}
+
+/* Grid Adjustments - Prevent Cards from Breaching Screen */
+.expertise-grid,
+.services-grid,
+.portfolio-grid,
+.blog-grid,
+.testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    padding: 0;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Ensure no horizontal overflow */
+.hero-content,
+.section-content {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Buttons */
